@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AdminProfile.cs" />
+    <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
     <Compile Include="Models\CPContext.cs" />
     <Compile Include="Models\EmployeePost.cs" />
