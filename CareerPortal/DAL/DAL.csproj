@@ -61,6 +61,7 @@
     <Compile Include="Models\AdminProfile.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
     <Compile Include="Models\CPContext.cs" />
+    <Compile Include="Models\EmployeePost.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Repo.cs" />
