@@ -12,5 +12,6 @@ namespace DAL.Models
         public DbSet<User> Users { get; set; }
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
         public DbSet<AdminProfile> AdminProfiles { get; set; }
+        public DbSet<AdminProfile> lol { get; set; }
     }
 }
