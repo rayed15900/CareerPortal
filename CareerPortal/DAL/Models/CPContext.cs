@@ -10,5 +10,6 @@ namespace DAL.Models
     public class CPContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
     }
 }
