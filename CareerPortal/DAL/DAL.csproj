@@ -56,15 +56,27 @@
     <Compile Include="Migrations\202304251401466_AddUserToDatabase.designer.cs">
       <DependentUpon>202304251401466_AddUserToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304261043397_InitDB.cs" />
+    <Compile Include="Migrations\202304261043397_InitDB.designer.cs">
+      <DependentUpon>202304261043397_InitDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304261521144_UserAdded.cs" />
+    <Compile Include="Migrations\202304261521144_UserAdded.designer.cs">
+      <DependentUpon>202304261521144_UserAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AdminProfile.cs" />
     <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\EmployerJobPosts.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
+=======
+    <Compile Include="Models\EmployeePost.cs" />
+    <Compile Include="Models\ManageUsers.cs" />
+>>>>>>> 2de6877469fc150d8e43b29b72f70d5279f3da5f
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Repo.cs" />
@@ -77,10 +89,20 @@
     <EmbeddedResource Include="Migrations\202304251401466_AddUserToDatabase.resx">
       <DependentUpon>202304251401466_AddUserToDatabase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304261043397_InitDB.resx">
+      <DependentUpon>202304261043397_InitDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304261521144_UserAdded.resx">
+      <DependentUpon>202304261521144_UserAdded.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Interfaces\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 2de6877469fc150d8e43b29b72f70d5279f3da5f
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

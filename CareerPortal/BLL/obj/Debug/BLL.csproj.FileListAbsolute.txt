@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\bin\Debug\BLL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\bin\Debug\BLL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\bin\Debug\DAL.dll
@@ -10,3 +11,17 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\obj\Debug\BLL.csproj.CoreCo
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\obj\Debug\BLL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\BLL\obj\Debug\BLL.pdb
+=======
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.pdb
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.pdb
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll.config
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.xml
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.pdb
+>>>>>>> 2de6877469fc150d8e43b29b72f70d5279f3da5f
