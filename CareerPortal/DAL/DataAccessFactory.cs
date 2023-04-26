@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DAL.Interfaces;
+using DAL.Models;
+using DAL.Repos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +11,9 @@ namespace BLL
 {
     public class DataAccessFactory
     {
+        public static IRepo<AdminProfile, int, bool> AdminData()
+        {
+            return new AdminProfileRepo();
+        }
     }
 }

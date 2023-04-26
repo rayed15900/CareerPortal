@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Models
+namespace BLL.DTOs
 {
-    public class AdminProfile
+    public class AdminProfileDTO
     {
-        [Key]
+        [Required]
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }

@@ -12,3 +12,18 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddUserToDatabase.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.xml
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddUserToDatabase.resources
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.InitDB.resources

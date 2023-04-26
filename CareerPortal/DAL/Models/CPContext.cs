@@ -13,8 +13,6 @@ namespace DAL.Models
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
         public DbSet<AdminProfile> AdminProfiles { get; set; }
         
-        public DbSet<ApplicantManageResume> applicantManageResumes { get; set; }
-
-        public DbSet<AdminProfile> lol { get; set; }
+        public DbSet<ApplicantManageResume> ApplicantManageResumes { get; set; }
     }
 }
