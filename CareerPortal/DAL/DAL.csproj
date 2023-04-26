@@ -73,6 +73,7 @@
     <Compile Include="Models\EmployerJobPosts.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
+    <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
