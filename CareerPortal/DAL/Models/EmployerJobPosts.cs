@@ -54,5 +54,11 @@ namespace DAL.Models
         public string Category_Id { get; set; }
 
         public virtual ManageCategory Categories { get; set; }
+
+        public virtual ICollection<AppliedJob> AppliedJobs { get; set; }
+        public EmployerJobPosts()
+        {
+            AppliedJobs = new List<AppliedJob>();
+        }
     }
 }

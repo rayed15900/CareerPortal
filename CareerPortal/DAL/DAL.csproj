@@ -73,6 +73,7 @@
     <Compile Include="Models\ApplicantJobApply.cs" />
     <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
+    <Compile Include="Models\AppliedJob.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
     <Compile Include="Models\EmployerJobPosts.cs" />
