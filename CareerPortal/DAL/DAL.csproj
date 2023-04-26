@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
-    <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202304251401466_AddUserToDatabase.cs" />
     <Compile Include="Migrations\202304251401466_AddUserToDatabase.designer.cs">
       <DependentUpon>202304251401466_AddUserToDatabase.cs</DependentUpon>
@@ -61,6 +60,7 @@
     <Compile Include="Models\AdminProfile.cs" />
     <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
+    <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
     <Compile Include="Models\EmployerJobPosts.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
@@ -77,6 +77,9 @@
     <EmbeddedResource Include="Migrations\202304251401466_AddUserToDatabase.resx">
       <DependentUpon>202304251401466_AddUserToDatabase.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

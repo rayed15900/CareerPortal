@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,6 @@ namespace DAL.Models
         [Required]
         [StringLength(20)]
         public string Type { get; set; }
-        [Required]
-        [StringLength(20)]
-        public string Category { get; set; }
         [Required]
         public int Salary { get; set; }
         [Required]
@@ -45,5 +43,16 @@ namespace DAL.Models
         [Required]
         [EmailAddress]
         public string CompanyMail { get; set; }
+
+        [Required]
+        [ForeignKey("empProfile")]
+        public string Employer_Id { get; set; }
+        public virtual EmployerProfile empProfile { get; set; }
+
+        [Required]
+        [ForeignKey("Categories")]
+        public string Category_Id { get; set; }
+
+        public virtual ManageCategory Categories { get; set; }
     }
 }
