@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IRepo<Type,ID,RET>
+    public interface IRepo<Type, ID, RET>
     {
         RET Create(Type obj);
         List<Type> Read();
