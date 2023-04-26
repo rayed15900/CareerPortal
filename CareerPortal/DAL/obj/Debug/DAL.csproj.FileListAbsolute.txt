@@ -12,6 +12,7 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddUserToDatabase.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+<<<<<<< HEAD
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
@@ -27,3 +28,19 @@ E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\o
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.InitDB.resources
+=======
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.xml
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddUserToDatabase.resources
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
+E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
+>>>>>>> 18adf6ec0826154e1ac61a68d6cfb721b8aeb5c6
