@@ -22,6 +22,12 @@ namespace DAL.Models
         [StringLength(30)]
         public string Mail { get; set; }
         [Required]
+        public string Phone { get; set; }
+        [Required]
+        public string Nationality { get; set; }
+        [Required]
+        public string Address { get; set; }
+        [Required]
         [StringLength(100)]
         public string Education { get; set; }
         public string[] Skills { get; set; }
