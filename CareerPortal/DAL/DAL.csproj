@@ -65,14 +65,21 @@
     <Compile Include="Migrations\202304261521144_UserAdded.designer.cs">
       <DependentUpon>202304261521144_UserAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304261554514_ApplicantProfileTableAdded.cs" />
+    <Compile Include="Migrations\202304261554514_ApplicantProfileTableAdded.designer.cs">
+      <DependentUpon>202304261554514_ApplicantProfileTableAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ApplicantJobApply.cs" />
     <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
+    <Compile Include="Models\AppliedJob.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
     <Compile Include="Models\EmployerJobPosts.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
+    <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304261521144_UserAdded.resx">
       <DependentUpon>202304261521144_UserAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304261554514_ApplicantProfileTableAdded.resx">
+      <DependentUpon>202304261554514_ApplicantProfileTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
