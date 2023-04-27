@@ -50,3 +50,6 @@ E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migratio
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.UserAdded.resources
 >>>>>>> 2d99ab673fd0bd30a32cf603c861a24a0c11f8f2
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.ApplicantProfileTableAdded.resources
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddToDatabase.resources
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.InitDatabase.resources

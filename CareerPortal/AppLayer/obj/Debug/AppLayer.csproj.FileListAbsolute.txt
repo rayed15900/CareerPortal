@@ -147,3 +147,6 @@ E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\AppLayer\obj\Debug\AppLaye
 E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\AppLayer\obj\Debug\AppLayer.dll
 E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\AppLayer\obj\Debug\AppLayer.pdb
 >>>>>>> 2de6877469fc150d8e43b29b72f70d5279f3da5f
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\AppLayer\bin\DAL.dll
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\AppLayer\bin\DAL.pdb
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\AppLayer\bin\DAL.dll.config
