@@ -23,8 +23,8 @@ namespace DAL.Models
         public int Applicant_Id { get; set; }
         public virtual ApplicantProfile appProfile { get; set; }
 
-        [ForeignKey("empJobPosts")]
+        [ForeignKey("empJobPost")]
         public int JobPost_Id { get; set; }
-        public virtual EmployerJobPosts empJobPosts { get; set; }
+        public virtual EmployerJobPost empJobPost { get; set; }
     }
 }

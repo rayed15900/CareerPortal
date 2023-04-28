@@ -9,15 +9,15 @@ using System.Web.Http;
 
 namespace AppLayer.Controllers
 {
-    public class EmployerProfileController : ApiController
+    public class EmployerJobPostController : ApiController
     {
         [HttpGet]
-        [Route("api/EmployerProfiles")]
+        [Route("api/EmployerJobPosts")]
         public HttpResponseMessage Read()
         {
             try
             {
-                var data = EmployerProfileService.Read();
+                var data = EmployerJobPostService.Read();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -26,12 +26,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpGet]
-        [Route("api/EmployerProfiles/{id}")]
+        [Route("api/EmployerJobPosts/{id}")]
         public HttpResponseMessage Read(int id)
         {
             try
             {
-                var data = EmployerProfileService.Read(id);
+                var data = EmployerJobPostService.Read(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -40,12 +40,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Create")]
-        public HttpResponseMessage Create(EmployerProfileDTO obj)
+        [Route("api/EmployerJobPosts/Create")]
+        public HttpResponseMessage Create(EmployerJobPostDTO obj)
         {
             try
             {
-                var data = EmployerProfileService.Create(obj);
+                var data = EmployerJobPostService.Create(obj);
                 if(data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new {Msg = "Created", Data = obj});
@@ -61,12 +61,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Update")]
-        public HttpResponseMessage Update(EmployerProfileDTO obj)
+        [Route("api/EmployerJobPosts/Update")]
+        public HttpResponseMessage Update(EmployerJobPostDTO obj)
         {
             try
             {
-                var data = EmployerProfileService.Update(obj);
+                var data = EmployerJobPostService.Update(obj);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Updated", Data = obj });
@@ -82,12 +82,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Delete/{id}")]
+        [Route("api/EmployerJobPosts/Delete/{id}")]
         public HttpResponseMessage Delete(int id)
         {
             try
             {
-                var data = EmployerProfileService.Delete(id);
+                var data = EmployerJobPostService.Delete(id);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Deleted" });

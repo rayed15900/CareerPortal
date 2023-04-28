@@ -11,7 +11,7 @@ namespace DAL.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
-        public DbSet<EmployerJobPosts> EmployerJobPosts { get; set; }
+        public DbSet<EmployerJobPost> EmployerJobPosts { get; set; }
         public DbSet<EmployerProfile> EmployerProfiles { get; set; }
         public DbSet<EmployerRecruitment> EmployerRecruitments { get; set; }
     }

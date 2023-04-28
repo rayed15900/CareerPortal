@@ -9,15 +9,15 @@ using System.Web.Http;
 
 namespace AppLayer.Controllers
 {
-    public class EmployerProfileController : ApiController
+    public class UserController : ApiController
     {
         [HttpGet]
-        [Route("api/EmployerProfiles")]
+        [Route("api/Users")]
         public HttpResponseMessage Read()
         {
             try
             {
-                var data = EmployerProfileService.Read();
+                var data = UserService.Read();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -26,12 +26,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpGet]
-        [Route("api/EmployerProfiles/{id}")]
+        [Route("api/Users/{id}")]
         public HttpResponseMessage Read(int id)
         {
             try
             {
-                var data = EmployerProfileService.Read(id);
+                var data = UserService.Read(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -40,12 +40,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Create")]
-        public HttpResponseMessage Create(EmployerProfileDTO obj)
+        [Route("api/Users/Create")]
+        public HttpResponseMessage Create(UserDTO obj)
         {
             try
             {
-                var data = EmployerProfileService.Create(obj);
+                var data = UserService.Create(obj);
                 if(data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new {Msg = "Created", Data = obj});
@@ -61,12 +61,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Update")]
-        public HttpResponseMessage Update(EmployerProfileDTO obj)
+        [Route("api/Users/Update")]
+        public HttpResponseMessage Update(UserDTO obj)
         {
             try
             {
-                var data = EmployerProfileService.Update(obj);
+                var data = UserService.Update(obj);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Updated", Data = obj });
@@ -82,12 +82,12 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/EmployerProfiles/Delete/{id}")]
+        [Route("api/Users/Delete/{id}")]
         public HttpResponseMessage Delete(int id)
         {
             try
             {
-                var data = EmployerProfileService.Delete(id);
+                var data = UserService.Delete(id);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Deleted" });

@@ -14,10 +14,10 @@ namespace DAL.Models
         public int Id { get; set; }
         [ForeignKey("ApplicantProfile")]
         public int ApplicantId { get; set; }
-        [ForeignKey("EmployerJobPosts")]
+        [ForeignKey("EmployerJobPost")]
         public int JobId { get; set; }
 
         public virtual ApplicantProfile ApplicantProfile { get; set; }
-        public virtual EmployerJobPosts EmployerJobPosts { get; set; }
+        public virtual EmployerJobPost EmployerJobPost { get; set; }
     }
 }

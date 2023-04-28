@@ -64,13 +64,16 @@
     <Compile Include="Models\AppliedJob.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
-    <Compile Include="Models\EmployerJobPosts.cs" />
+    <Compile Include="Models\EmployerJobPost.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
     <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\EmployerRecruitmentRepo.cs" />
+    <Compile Include="Repos\EmployerJobPostRepo.cs" />
+    <Compile Include="Repos\UserRepo.cs" />
     <Compile Include="Repos\EmployerProfileRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
   </ItemGroup>
