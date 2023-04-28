@@ -48,3 +48,4 @@ E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migratio
 E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.UserAdded.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\DAL\obj\Debug\DAL.Migrations.UserAdded.resources
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.UserAdded.resources

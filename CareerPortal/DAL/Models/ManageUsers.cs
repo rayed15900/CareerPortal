@@ -13,7 +13,7 @@ namespace DAL.Models
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("User")]
+        [ForeignKey("Users")]
         public int UId { get; set; }
         public virtual ICollection<User> Users { get; set;}
         public ManageUsers()

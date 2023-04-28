@@ -12,7 +12,7 @@ namespace DAL.Models
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("EmployerJobPosts")]
+        [ForeignKey("employerJobPosts")]
         public int JobId { get; set; }
         public bool IsApproved { get; set; }
         public virtual ICollection<EmployerJobPosts> employerJobPosts { get; set; }

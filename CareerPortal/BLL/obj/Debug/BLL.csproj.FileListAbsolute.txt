@@ -25,3 +25,15 @@ E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.C
 E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.dll
 E:\Semester-10\.Net\Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.pdb
 >>>>>>> 2de6877469fc150d8e43b29b72f70d5279f3da5f
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.pdb
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.pdb
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll.config
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.xml
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.dll
+E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.pdb
