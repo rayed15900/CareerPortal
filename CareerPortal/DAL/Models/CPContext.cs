@@ -11,8 +11,14 @@ namespace DAL.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
+<<<<<<< HEAD
         public DbSet<ManageUsers> ManageUsers { get; set; }
         public DbSet<ManageJobPost> ManageJobPosts { get; set; }
         public DbSet<ManageCategory> ManageCategories { get; set; }
+=======
+        public DbSet<EmployerJobPost> EmployerJobPosts { get; set; }
+        public DbSet<EmployerProfile> EmployerProfiles { get; set; }
+        public DbSet<EmployerRecruitment> EmployerRecruitments { get; set; }
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
     }
 }

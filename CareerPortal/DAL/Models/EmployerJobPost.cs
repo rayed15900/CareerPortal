@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class EmployerJobPosts
+    public class EmployerJobPost
     {
         [Key]
         public int Id { get; set; }
@@ -44,15 +44,19 @@ namespace DAL.Models
         [EmailAddress]
         public string CompanyMail { get; set; }
 
-        [Required]
         [ForeignKey("empProfile")]
-        public string Employer_Id { get; set; }
+        public int Employer_Id { get; set; }
         public virtual EmployerProfile empProfile { get; set; }
 
-        [Required]
         [ForeignKey("Categories")]
-        public string Category_Id { get; set; }
+        public int Category_Id { get; set; }
 
         public virtual ManageCategory Categories { get; set; }
+
+        public virtual ICollection<AppliedJob> AppliedJobs { get; set; }
+        public EmployerJobPost()
+        {
+            AppliedJobs = new List<AppliedJob>();
+        }
     }
 }

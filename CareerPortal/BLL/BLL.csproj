@@ -42,11 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DTOs\ManageCategoryDTO.cs" />
     <Compile Include="DTOs\ManageJobPostDTO.cs" />
     <Compile Include="DTOs\ManageUsersDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ManageUsersService.cs" />
+=======
+    <Compile Include="DTOs\EmployerRecruitmentDTO.cs" />
+    <Compile Include="DTOs\EmployerJobPostDTO.cs" />
+    <Compile Include="DTOs\UserDTO.cs" />
+    <Compile Include="DTOs\EmployerProfileDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmployerProfileService.cs" />
+    <Compile Include="Services\EmployerRecruitmentService.cs" />
+    <Compile Include="Services\EmployerJobPostService.cs" />
+    <Compile Include="Services\UserService.cs" />
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

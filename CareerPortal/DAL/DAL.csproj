@@ -53,27 +53,51 @@
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Migrations\202304271436385_InitDatabase.cs" />
+    <Compile Include="Migrations\202304271436385_InitDatabase.designer.cs">
+      <DependentUpon>202304271436385_InitDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ApplicantJobApply.cs" />
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
     <Compile Include="Models\ApplicantManageResume.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
+    <Compile Include="Models\AppliedJob.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
-    <Compile Include="Models\EmployerJobPosts.cs" />
+    <Compile Include="Models\EmployerJobPost.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
     <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Repos\ManageCategoryRepo.cs" />
     <Compile Include="Repos\ManageJobPostRepo.cs" />
     <Compile Include="Repos\ManageUserRepo.cs" />
+=======
+    <Compile Include="Repos\EmployerRecruitmentRepo.cs" />
+    <Compile Include="Repos\EmployerJobPostRepo.cs" />
+    <Compile Include="Repos\UserRepo.cs" />
+    <Compile Include="Repos\EmployerProfileRepo.cs" />
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
     <Compile Include="Repos\Repo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202304271436385_InitDatabase.resx">
+      <DependentUpon>202304271436385_InitDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

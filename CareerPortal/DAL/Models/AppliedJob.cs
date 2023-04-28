@@ -8,18 +8,16 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class ManageJobPost
+    public class AppliedJob
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("employerJobPosts")]
+        [ForeignKey("ApplicantProfile")]
+        public int ApplicantId { get; set; }
+        [ForeignKey("EmployerJobPost")]
         public int JobId { get; set; }
-        public bool IsApproved { get; set; }
-        public virtual ICollection<EmployerJobPost> employerJobPost { get; set; }
-        public ManageJobPost()
-        {
-            employerJobPost = new List<EmployerJobPost>();
-        }
 
+        public virtual ApplicantProfile ApplicantProfile { get; set; }
+        public virtual EmployerJobPost EmployerJobPost { get; set; }
     }
 }

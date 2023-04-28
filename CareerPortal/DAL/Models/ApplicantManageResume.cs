@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,5 +12,10 @@ namespace DAL.Models
     {
         [Key]
         public int Id { get; set; }
+        [ForeignKey("ApplicantProfile")]
+        public int ApplicantId { get; set; }
+
+
+        public virtual ApplicantProfile ApplicantProfile { get; set; }
     }
 }
