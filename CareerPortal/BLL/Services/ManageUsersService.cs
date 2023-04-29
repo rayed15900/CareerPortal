@@ -11,10 +11,32 @@ namespace BLL.Services
 {
     public class ManageUsersService
     {
+        public static bool Create(ManageUsersDTO manageUser)
+        {
+            var data = Convert(manageUser);
+            return DataAccessFactory.ManagerUserData().Create(data);
+        }
+
         public static List<ManageUsersDTO> Read()
         {
             var data = DataAccessFactory.ManagerUserData().Read();
             return Convert(data);
+        }
+
+        public static ManageUsersDTO Read(int id)
+        {
+            return Convert(DataAccessFactory.ManagerUserData().Read(id));
+        }
+
+        public static bool Update(ManageUsersDTO manageUsers)
+        {
+            var data = Convert(manageUsers);
+            return DataAccessFactory.ManagerUserData().Update(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.ManagerUserData().Delete(id);
         }
 
         static List<ManageUsersDTO> Convert(List<ManageUsers> manageUsers)
@@ -42,7 +64,8 @@ namespace BLL.Services
             return new ManageUsersDTO()
             {
                 Id = manageUsers.Id,
-                UId = manageUsers.UId
+                ApplicantID = manageUsers.ApplicantID,
+                EmployerID = manageUsers.EmployerID
             };
         }
 
@@ -51,7 +74,8 @@ namespace BLL.Services
             return new ManageUsers()
             {
                 Id = manageUsers.Id,
-                UId = manageUsers.UId
+                ApplicantID = manageUsers.ApplicantID,
+                EmployerID = manageUsers.EmployerID
             };
         }
     }

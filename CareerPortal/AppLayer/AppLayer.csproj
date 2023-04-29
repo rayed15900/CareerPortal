@@ -94,6 +94,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EmployerRecruitmentController.cs" />
     <Compile Include="Controllers\EmployerJobPostController.cs" />
+    <Compile Include="Controllers\ManageCategoryController.cs" />
+    <Compile Include="Controllers\ManageJobPostController.cs" />
+    <Compile Include="Controllers\ManageUsersController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\EmployerProfileController.cs" />
     <Compile Include="Global.asax.cs">

@@ -13,12 +13,11 @@ namespace DAL.Models
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("Users")]
-        public int UId { get; set; }
-        public virtual ICollection<User> Users { get; set;}
-        public ManageUsers()
-        {
-            Users = new List<User>();
-        }
+        [ForeignKey("applicantProfile")]
+        public int ApplicantID { get; set; }
+        [ForeignKey("employerProfiles")]
+        public int EmployerID { get; set; }
+        public virtual ApplicantProfile applicantProfile { get; set; }
+        public virtual EmployerProfile employerProfiles { get; set; }
     }
 }

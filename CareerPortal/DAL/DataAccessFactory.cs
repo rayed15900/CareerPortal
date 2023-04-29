@@ -11,7 +11,7 @@ namespace DAL
 {
     public class DataAccessFactory
     {
-<<<<<<< HEAD
+
         public static IRepo<ManageUsers, int, bool> ManagerUserData()
         {
             return new ManageUserRepo();
@@ -23,7 +23,8 @@ namespace DAL
         public static IRepo<ManageCategory, int, bool> ManageCategoryData()
         {
             return new ManageCategoryRepo();
-=======
+        }
+
         public static IRepo<User, int, bool> UserData()
         {
             return new UserRepo();
@@ -39,7 +40,6 @@ namespace DAL
         public static IRepo<EmployerRecruitment, int, bool> EmployerRecruitmentData()
         {
             return new EmployerRecruitmentRepo();
->>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
         }
     }
 }
