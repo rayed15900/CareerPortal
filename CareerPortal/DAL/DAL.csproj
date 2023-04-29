@@ -87,19 +87,12 @@
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Repos\ManageCategoryRepo.cs" />
     <Compile Include="Repos\ManageJobPostRepo.cs" />
     <Compile Include="Repos\ManageUserRepo.cs" />
-    <Compile Include="Repos\EmployerRecruitmentRepo.cs" />
-    <Compile Include="Repos\EmployerJobPostRepo.cs" />
-    <Compile Include="Repos\UserRepo.cs" />
-    <Compile Include="Repos\EmployerProfileRepo.cs" />
-=======
     <Compile Include="Repos\ApplicantEducationRepo.cs" />
     <Compile Include="Repos\ApplicantJobApplyRepo.cs" />
     <Compile Include="Repos\ApplicantProfileRepo.cs" />
->>>>>>> b3a796ff2906d560b556748561c276478e7e11a2
     <Compile Include="Repos\Repo.cs" />
   </ItemGroup>
   <ItemGroup>

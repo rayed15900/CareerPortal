@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="DTOs\ManageCategoryDTO.cs" />
     <Compile Include="DTOs\ManageJobPostDTO.cs" />
     <Compile Include="DTOs\ManageUsersDTO.cs" />
@@ -50,15 +49,9 @@
     <Compile Include="Services\ManageCategoryService.cs" />
     <Compile Include="Services\ManageJobPostService.cs" />
     <Compile Include="Services\ManageUsersService.cs" />
-    <Compile Include="DTOs\EmployerRecruitmentDTO.cs" />
-    <Compile Include="DTOs\EmployerJobPostDTO.cs" />
-    <Compile Include="DTOs\UserDTO.cs" />
-    <Compile Include="DTOs\EmployerProfileDTO.cs" />
-=======
     <Compile Include="DTOs\ApplicantEducationalQualificationDTO.cs" />
     <Compile Include="DTOs\ApplicantJobApplyDTO.cs" />
     <Compile Include="DTOs\ApplicantProfileDTO.cs" />
->>>>>>> b3a796ff2906d560b556748561c276478e7e11a2
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ApplicantEducationalQualificationService.cs" />
     <Compile Include="Services\ApplicantJobApplyService.cs" />
