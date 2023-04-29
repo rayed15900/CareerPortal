@@ -27,12 +27,14 @@ namespace DAL.Models
         public string Nationality { get; set; }
         [Required]
         public string Address { get; set; }
-        [Required]
-        [StringLength(100)]
-        public string Education { get; set; }
-        public string[] Skills { get; set; }
         [StringLength(100)]
         public string About { get; set; }
         public virtual User User { get; set; }
+
+        public virtual ICollection<ApplicantEducationalQualification> Qualifications { get; set; }
+        public ApplicantProfile()
+        {
+            Qualifications=new List<ApplicantEducationalQualification>();
+        }
     }
 }

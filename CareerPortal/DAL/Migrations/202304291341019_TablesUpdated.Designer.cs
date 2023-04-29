@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class ApplicantProfileTableAdded : IMigrationMetadata
+    public sealed partial class TablesUpdated : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ApplicantProfileTableAdded));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(TablesUpdated));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304261554514_ApplicantProfileTableAdded"; }
+            get { return "202304291341019_TablesUpdated"; }
         }
         
         string IMigrationMetadata.Source

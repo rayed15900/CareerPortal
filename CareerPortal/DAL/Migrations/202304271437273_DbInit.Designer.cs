@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class UserAdded : IMigrationMetadata
+    public sealed partial class DbInit : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UserAdded));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(DbInit));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304261521144_UserAdded"; }
+            get { return "202304271437273_DbInit"; }
         }
         
         string IMigrationMetadata.Source

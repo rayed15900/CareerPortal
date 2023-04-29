@@ -42,7 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ApplicantEducationalQualificationDTO.cs" />
+    <Compile Include="DTOs\ApplicantJobApplyDTO.cs" />
+    <Compile Include="DTOs\ApplicantProfileDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ApplicantEducationalQualificationService.cs" />
+    <Compile Include="Services\ApplicantJobApplyService.cs" />
+    <Compile Include="Services\ApplicantProfileService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -50,9 +56,6 @@
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
