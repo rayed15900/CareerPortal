@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class EmployerJobPost
+    public class EmployerJobPosts
     {
         [Key]
         public int Id { get; set; }
@@ -54,7 +54,7 @@ namespace DAL.Models
         public virtual ManageCategory Categories { get; set; }
 
         public virtual ICollection<AppliedJob> AppliedJobs { get; set; }
-        public EmployerJobPost()
+        public EmployerJobPosts()
         {
             AppliedJobs = new List<AppliedJob>();
         }

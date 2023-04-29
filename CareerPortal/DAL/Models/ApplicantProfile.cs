@@ -19,9 +19,10 @@ namespace DAL.Models
         [StringLength(20)]
         public string Name { get; set; }
         [Required]
-        [StringLength(30)]
+        [EmailAddress]
         public string Mail { get; set; }
         [Required]
+        [Range(11, 11)]
         public string Phone { get; set; }
         [Required]
         public string Nationality { get; set; }

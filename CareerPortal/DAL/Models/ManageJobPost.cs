@@ -15,10 +15,10 @@ namespace DAL.Models
         [ForeignKey("EmployerJobPosts")]
         public int JobId { get; set; }
         public bool IsApproved { get; set; }
-        public virtual ICollection<EmployerJobPost> employerJobPost { get; set; }
+        public virtual ICollection<EmployerJobPosts> employerJobPosts { get; set; }
         public ManageJobPost()
         {
-            employerJobPost = new List<EmployerJobPost>();
+            employerJobPosts = new List<EmployerJobPosts>();
         }
 
     }

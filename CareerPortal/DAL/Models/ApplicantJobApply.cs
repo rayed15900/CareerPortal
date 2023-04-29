@@ -17,8 +17,10 @@ namespace DAL.Models
         [Required]
         public string PositionName { get; set; }
         [Required]
+        [Range(11,11)]
         public string Phone { get; set; }
         [Required]
+        [EmailAddress]
         public string Mail { get; set; }
         [Required]
         public string ExpectedSalary { get; set; }
