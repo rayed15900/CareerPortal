@@ -12,14 +12,21 @@ namespace DAL.Models
     {
         [Key]
         public int Id { get; set; }
+        [ForeignKey("Applicant")]
+        public int ApplicantId { get; set; }
         [Required]
+        public string PositionName { get; set; }
+        [Required]
+        [Range(11,11)]
         public string Phone { get; set; }
         [Required]
+        [EmailAddress]
         public string Mail { get; set; }
         [Required]
         public string ExpectedSalary { get; set; }
         [Required]
         public DateTime StartTime { get; set; }
+        public virtual ApplicantProfile Applicant {  get; set; }
         public virtual ICollection<AppliedJob> AppliedJobs { get; set; }
         public ApplicantJobApply() 
         {

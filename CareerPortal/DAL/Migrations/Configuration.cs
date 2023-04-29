@@ -18,23 +18,12 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
-
             //for (int i = 1; i <= 10; i++)
             //{
-            //    context.Users.AddOrUpdate(new Models.User
+            //    context.ApplicantProfiles.AddOrUpdate(new Models.ApplicantProfile
             //    {
-            //        Username = Guid.NewGuid().ToString().Substring(0, 10),
-            //        Password = Guid.NewGuid().ToString().Substring(0, 6),
-            //        Type = "Employer"
-            //    });
-            //}
-
-            //for (int i = 1; i <= 10; i++)
-            //{
-            //    context.EmployerProfiles.AddOrUpdate(new Models.EmployerProfile
-            //    {
-            //        FirstName = "E" + i + " First",
             //        LastName = "E" + i + " Last",
+            //        FirstName = "E" + i + " First",
             //        Email = "E" + i + "@gmail.com",
             //        PhoneNumber = Guid.NewGuid().ToString().Substring(0, 11),
             //        Nationality = Guid.NewGuid().ToString().Substring(0, 10),
@@ -43,6 +32,7 @@
             //        User_Id = i,
             //    });
             //}
+
         }
     }
 }

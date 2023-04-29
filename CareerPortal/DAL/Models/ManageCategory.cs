@@ -15,10 +15,10 @@ namespace DAL.Models
         [StringLength(20)]
         public string Name { get; set; }
 
-        public virtual ICollection<EmployerJobPost> empJobPosts { get; set; }
+        public virtual ICollection<EmployerJobPosts> empJobPosts { get; set; }
         public ManageCategory()
         {
-            empJobPosts= new List<EmployerJobPost>();
+            empJobPosts= new List<EmployerJobPosts>();
         }
     }
 }
