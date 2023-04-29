@@ -92,9 +92,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\ApplicantEducationalQualificationController.cs" />
     <Compile Include="Controllers\ApplicantJobApplyController.cs" />
     <Compile Include="Controllers\ApplicantProfileController.cs" />
+=======
+    <Compile Include="Controllers\EmployerRecruitmentController.cs" />
+    <Compile Include="Controllers\EmployerJobPostController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\EmployerProfileController.cs" />
+>>>>>>> fa832b9aa173802a0df0fabd61c032030c8d9690
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
