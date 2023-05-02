@@ -53,11 +53,6 @@
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202305021612527_AddToDatabase.cs" />
-    <Compile Include="Migrations\202305021612527_AddToDatabase.designer.cs">
-      <DependentUpon>202305021612527_AddToDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
     <Compile Include="Models\ApplicantJobApply.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
@@ -86,11 +81,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305021612527_AddToDatabase.resx">
-      <DependentUpon>202305021612527_AddToDatabase.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

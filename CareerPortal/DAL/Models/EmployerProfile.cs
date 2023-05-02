@@ -28,14 +28,10 @@ namespace DAL.Models
         [StringLength(20)]
         public string Nationality { get; set; }
         [Required]
-        [StringLength(10, MinimumLength = 10)]
-        public string NationalID { get; set; }
-        [Required]
         public DateTime DateOfBirth { get; set; }
         [Required]
         public string Gender { get; set; }
 
-        
         [ForeignKey("user")]
         public int User_Id { get; set; }
         public virtual User user { get; set; }
