@@ -9,17 +9,17 @@ namespace DAL.Models
 {
     public class CPContext : DbContext
     {
+        public DbSet<EmployerJobPost> EmployerJobPosts { get; set; }
+        public DbSet<EmployerProfile> EmployerProfiles { get; set; }
+        public DbSet<EmployerRecruitment> EmployerRecruitments { get; set; }
+
         public DbSet<User> Users { get; set; }
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
-
+        public DbSet<ApplicantJobApply> ApplicantJobApply { get; set; }
+        public DbSet<ApplicantEducationalQualification> Qualifications { get; set; }
 
         public DbSet<ManageUsers> ManageUsers { get; set; }
         public DbSet<ManageJobPost> ManageJobPosts { get; set; }
         public DbSet<ManageCategory> ManageCategories { get; set; }
-
-        public DbSet<ApplicantJobApply> ApplicantJobApply { get; set; }
-        public DbSet<ApplicantEducationalQualification> Qualifications { get; set; }
-
-
     }
 }

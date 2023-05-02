@@ -18,6 +18,6 @@ namespace DAL.Models
         public int JobId { get; set; }
 
         public virtual ApplicantProfile ApplicantProfile { get; set; }
-        public virtual EmployerJobPosts EmployerJobPosts { get; set; }
+        public virtual EmployerJobPost EmployerJobPosts { get; set; }
     }
 }

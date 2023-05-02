@@ -53,25 +53,9 @@
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202304271437273_DbInit.cs" />
-    <Compile Include="Migrations\202304271437273_DbInit.designer.cs">
-      <DependentUpon>202304271437273_DbInit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281346581_ApplicantProfileUpdated.cs" />
-    <Compile Include="Migrations\202304281346581_ApplicantProfileUpdated.designer.cs">
-      <DependentUpon>202304281346581_ApplicantProfileUpdated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304291341019_TablesUpdated.cs" />
-    <Compile Include="Migrations\202304291341019_TablesUpdated.designer.cs">
-      <DependentUpon>202304291341019_TablesUpdated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304291529483_Update.cs" />
-    <Compile Include="Migrations\202304291529483_Update.designer.cs">
-      <DependentUpon>202304291529483_Update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281452106_AdminEntityAdded.cs" />
-    <Compile Include="Migrations\202304281452106_AdminEntityAdded.designer.cs">
-      <DependentUpon>202304281452106_AdminEntityAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202305021612527_AddToDatabase.cs" />
+    <Compile Include="Migrations\202305021612527_AddToDatabase.designer.cs">
+      <DependentUpon>202305021612527_AddToDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
@@ -80,40 +64,32 @@
     <Compile Include="Models\AppliedJob.cs" />
     <Compile Include="Models\ManageCategory.cs" />
     <Compile Include="Models\CPContext.cs" />
-    <Compile Include="Models\EmployerJobPosts.cs" />
+    <Compile Include="Models\EmployerJobPost.cs" />
     <Compile Include="Models\EmployerProfile.cs" />
     <Compile Include="Models\EmployerRecruitment.cs" />
     <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\ManageCategoryRepo.cs" />
-    <Compile Include="Repos\ManageJobPostRepo.cs" />
-    <Compile Include="Repos\ManageUserRepo.cs" />
     <Compile Include="Repos\ApplicantEducationRepo.cs" />
     <Compile Include="Repos\ApplicantJobApplyRepo.cs" />
     <Compile Include="Repos\ApplicantProfileRepo.cs" />
+    <Compile Include="Repos\EmployerJobPostRepo.cs" />
+    <Compile Include="Repos\EmployerProfileRepo.cs" />
+    <Compile Include="Repos\EmployerRecruitmentRepo.cs" />
+    <Compile Include="Repos\ManageCategoryRepo.cs" />
+    <Compile Include="Repos\ManageJobPostRepo.cs" />
+    <Compile Include="Repos\ManageUserRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304271437273_DbInit.resx">
-      <DependentUpon>202304271437273_DbInit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281346581_ApplicantProfileUpdated.resx">
-      <DependentUpon>202304281346581_ApplicantProfileUpdated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304291341019_TablesUpdated.resx">
-      <DependentUpon>202304291341019_TablesUpdated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304291529483_Update.resx">
-      <DependentUpon>202304291529483_Update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281452106_AdminEntityAdded.resx">
-      <DependentUpon>202304281452106_AdminEntityAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305021612527_AddToDatabase.resx">
+      <DependentUpon>202305021612527_AddToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

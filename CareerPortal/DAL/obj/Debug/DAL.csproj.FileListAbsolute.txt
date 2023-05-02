@@ -1,18 +1,14 @@
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DbInit.resources
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.ApplicantProfileUpdated.resources
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.TablesUpdated.resources
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.Update.resources
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AdminEntityAdded.resources
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.dll
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.xml
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
-E:\AIUB\Semester-10\Dot net project\Main Project\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.dll
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.xml
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddToDatabase.resources
+C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

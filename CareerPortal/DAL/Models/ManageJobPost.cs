@@ -17,12 +17,5 @@ namespace DAL.Models
         public bool IsApproved { get; set; }
 
         public virtual EmployerJobPost employerJobPost { get; set; }
-
-        public virtual ICollection<EmployerJobPosts> employerJobPosts { get; set; }
-        public ManageJobPost()
-        {
-            employerJobPosts = new List<EmployerJobPosts>();
-        }
-
     }
 }

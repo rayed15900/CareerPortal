@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AdminEntityAdded : IMigrationMetadata
+    public sealed partial class AddToDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AdminEntityAdded));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddToDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304281452106_AdminEntityAdded"; }
+            get { return "202305021612527_AddToDatabase"; }
         }
         
         string IMigrationMetadata.Source

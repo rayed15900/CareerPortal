@@ -11,8 +11,22 @@ namespace DAL
 {
     public class DataAccessFactory
     {
-
-
+        public static IRepo<User, int, bool> UserData()
+        {
+            return new UserRepo();
+        }
+        public static IRepo<EmployerJobPost, int, bool> EmployerJobPostData()
+        {
+            return new EmployerJobPostRepo();
+        }
+        public static IRepo<EmployerProfile, int, bool> EmployerProfileData()
+        {
+            return new EmployerProfileRepo();
+        }
+        public static IRepo<EmployerRecruitment, int, bool> EmployerRecruitmentData()
+        {
+            return new EmployerRecruitmentRepo();
+        }
         public static IRepo<ManageUsers, int, bool> ManagerUserData()
         {
             return new ManageUserRepo();
