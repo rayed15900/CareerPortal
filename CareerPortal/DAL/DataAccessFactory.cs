@@ -11,6 +11,16 @@ namespace DAL
 {
     public class DataAccessFactory
     {
+        public static IAuth<bool> AuthData()
+        {
+            return new UserRepo();
+        }
+
+        public static IRepo<Token, string, Token> TokenData()
+        {
+            return new TokenRepo();
+        }
+
         public static IRepo<User, int, bool> UserData()
         {
             return new UserRepo();

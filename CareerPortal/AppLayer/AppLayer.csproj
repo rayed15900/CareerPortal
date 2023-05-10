@@ -92,9 +92,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Auth\Logged.cs" />
+    <Compile Include="Auth\Applicant.cs" />
+    <Compile Include="Auth\Employer.cs" />
+    <Compile Include="Auth\Admin.cs" />
     <Compile Include="Controllers\ApplicantEducationalQualificationController.cs" />
     <Compile Include="Controllers\ApplicantJobApplyController.cs" />
     <Compile Include="Controllers\ApplicantProfileController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\EmployerJobPostController.cs" />
     <Compile Include="Controllers\EmployerProfileController.cs" />
     <Compile Include="Controllers\EmployerRecruitmentController.cs" />
@@ -105,6 +110,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,7 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

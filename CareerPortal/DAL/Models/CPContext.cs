@@ -9,6 +9,8 @@ namespace DAL.Models
 {
     public class CPContext : DbContext
     {
+        public DbSet<Token> Tokens { get; set; }
+
         public DbSet<EmployerJobPost> EmployerJobPosts { get; set; }
         public DbSet<EmployerProfile> EmployerProfiles { get; set; }
         public DbSet<EmployerRecruitment> EmployerRecruitments { get; set; }

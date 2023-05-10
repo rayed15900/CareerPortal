@@ -52,7 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Migrations\202305091001183_AddToDatabase.cs" />
+    <Compile Include="Migrations\202305091001183_AddToDatabase.designer.cs">
+      <DependentUpon>202305091001183_AddToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305100312186_Token.cs" />
+    <Compile Include="Migrations\202305100312186_Token.designer.cs">
+      <DependentUpon>202305100312186_Token.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
     <Compile Include="Models\ApplicantJobApply.cs" />
     <Compile Include="Models\ApplicantProfile.cs" />
@@ -64,6 +74,7 @@
     <Compile Include="Models\EmployerRecruitment.cs" />
     <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\ApplicantEducationRepo.cs" />
@@ -76,11 +87,20 @@
     <Compile Include="Repos\ManageJobPostRepo.cs" />
     <Compile Include="Repos\ManageUserRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202305091001183_AddToDatabase.resx">
+      <DependentUpon>202305091001183_AddToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305100312186_Token.resx">
+      <DependentUpon>202305100312186_Token.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
