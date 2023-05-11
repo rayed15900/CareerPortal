@@ -17,7 +17,7 @@ namespace DAL.Models
         [Required]
         public string PositionName { get; set; }
         [Required]
-        [Range(11,11)]
+        [StringLength(11, MinimumLength = 11)]
         public string Phone { get; set; }
         [Required]
         [EmailAddress]

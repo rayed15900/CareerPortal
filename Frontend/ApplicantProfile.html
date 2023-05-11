@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<header>
+	<h1 style="display:flex; justify-content: center; align-items: center;">Career<span style="color:red;">Portal</span></h1>
+</header>
+<style>
+header {
+	padding: 20px;
+    margin: 0;
+	background: aqua;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+footer {
+	background-color: aqua;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 0;
+}
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script>
+		var app = angular.module("app",[]);
+		app.controller('profileCtrl',function($scope,$http){
+			$http.get("https://localhost:44354/api/applicantprofiles").then(function(resp){
+				$scope.profiles = resp.data;
+			},function(err){
+				$scope.msg = "No data found";
+			});
+		})
+	</script>
+	<body ng-app="app">
+		<div ng-controller="profileCtrl">
+		<h4>{{msg}}</h4>
+			<table border=1 style="border-collapse:collapse">
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Mail</th>
+					<th>Phone</th>
+					<th>Nationality</th>
+					<th>Address</th>
+					<th>About</th>
+				</tr>
+				<tr ng-repeat="p in profiles">
+					<td>{{p.Id}}</td>
+					<td>{{p.Name}}</td>
+					<td>{{p.Mail}}</td>
+					<td>{{p.Phone}}</td>
+					<td>{{p.Nationality}}</td>
+					<td>{{p.Address}}</td>
+					<td>{{p.About}}</td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+	<footer>
+	<div style="display:flex; justify-content: center; align-items: center;">Copyright &copy; 2023 Career<span style="color:red;">Portal</span></div>
+	</footer>
+</html>

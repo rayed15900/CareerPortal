@@ -7,9 +7,11 @@ using System.Net;
 using System.Net.Http;
 using System.Runtime.Remoting.Messaging;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace AppLayer.Controllers
 {
+    [EnableCors("*","*","*")]
     public class ApplicantProfileController : ApiController
     {
         [HttpGet]

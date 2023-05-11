@@ -10,3 +10,15 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.pdb
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.dll
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\BLL.pdb
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.dll
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.pdb
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\DAL.dll.config
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\bin\Debug\EntityFramework.xml
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.dll
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\BLL\obj\Debug\BLL.pdb

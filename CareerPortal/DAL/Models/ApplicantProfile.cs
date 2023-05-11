@@ -22,7 +22,7 @@ namespace DAL.Models
         [EmailAddress]
         public string Mail { get; set; }
         [Required]
-        [Range(11, 11)]
+        [StringLength(11, MinimumLength = 11)]
         public string Phone { get; set; }
         [Required]
         public string Nationality { get; set; }

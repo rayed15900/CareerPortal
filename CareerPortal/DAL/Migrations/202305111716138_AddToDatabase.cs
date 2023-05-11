@@ -14,7 +14,7 @@
                         Id = c.Int(nullable: false, identity: true),
                         ApplicantId = c.Int(nullable: false),
                         PositionName = c.String(nullable: false),
-                        Phone = c.String(nullable: false),
+                        Phone = c.String(nullable: false, maxLength: 11),
                         Mail = c.String(nullable: false),
                         ExpectedSalary = c.String(nullable: false),
                         StartTime = c.DateTime(nullable: false),
@@ -31,7 +31,7 @@
                         UId = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 20),
                         Mail = c.String(nullable: false),
-                        Phone = c.String(nullable: false),
+                        Phone = c.String(nullable: false, maxLength: 11),
                         Nationality = c.String(nullable: false),
                         Address = c.String(nullable: false),
                         About = c.String(maxLength: 100),
@@ -179,6 +179,19 @@
                 .Index(t => t.ApplicantID)
                 .Index(t => t.EmployerID);
             
+            CreateTable(
+                "dbo.Tokens",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        TokenKey = c.String(nullable: false),
+                        CreatedAt = c.DateTime(nullable: false),
+                        DeletedAt = c.DateTime(),
+                        Type = c.String(nullable: false),
+                        Username = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -213,6 +226,7 @@
             DropIndex("dbo.ApplicantEducationalQualifications", new[] { "ApplicantId" });
             DropIndex("dbo.ApplicantProfiles", new[] { "UId" });
             DropIndex("dbo.ApplicantJobApplies", new[] { "ApplicantId" });
+            DropTable("dbo.Tokens");
             DropTable("dbo.ManageUsers");
             DropTable("dbo.ManageJobPosts");
             DropTable("dbo.EmployerRecruitments");

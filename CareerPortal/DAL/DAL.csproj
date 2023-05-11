@@ -54,13 +54,9 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202305091001183_AddToDatabase.cs" />
-    <Compile Include="Migrations\202305091001183_AddToDatabase.designer.cs">
-      <DependentUpon>202305091001183_AddToDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305100312186_Token.cs" />
-    <Compile Include="Migrations\202305100312186_Token.designer.cs">
-      <DependentUpon>202305100312186_Token.cs</DependentUpon>
+    <Compile Include="Migrations\202305111716138_AddToDatabase.cs" />
+    <Compile Include="Migrations\202305111716138_AddToDatabase.designer.cs">
+      <DependentUpon>202305111716138_AddToDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
@@ -95,11 +91,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305091001183_AddToDatabase.resx">
-      <DependentUpon>202305091001183_AddToDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305100312186_Token.resx">
-      <DependentUpon>202305100312186_Token.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305111716138_AddToDatabase.resx">
+      <DependentUpon>202305111716138_AddToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
