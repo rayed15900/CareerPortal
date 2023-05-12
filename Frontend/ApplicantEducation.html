@@ -43,6 +43,15 @@ table tr:nth-child(even) {
 				$scope.msg = "No data found";
 			});
 		})
+		app.controller('profileCtrl',function($scope,$http){
+			$scope.load = function(){
+			$http.get("https://localhost:44354/api/applicantprofiles").then(function(resp){
+				$scope.profiles = resp.data;
+			},function(err){
+				$scope.msg = "No data found";
+			});
+			};
+		})
 	</script>
 	<body ng-app="app">
 		<div ng-controller="educationCtrl">
@@ -67,6 +76,32 @@ table tr:nth-child(even) {
 			</table>
 		</div>
 		
+		<div ng-controller="profileCtrl">
+			<input type="checkbox" ng-click="load()" ng-model="myVar" ng-init="myVar = false">Applicant Profile
+			<h4>{{msg}}</h4>
+			<div ng-if="myVar">
+				<table border=1 style="border-collapse:collapse">
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Mail</th>
+						<th>Phone</th>
+						<th>Nationality</th>
+						<th>Address</th>
+						<th>About</th>
+					</tr>
+					<tr ng-repeat="p in profiles">
+						<td>{{p.Id}}</td>
+						<td>{{p.Name}}</td>
+						<td>{{p.Mail}}</td>
+						<td>{{p.Phone}}</td>
+						<td>{{p.Nationality}}</td>
+						<td>{{p.Address}}</td>
+						<td>{{p.About}}</td>
+					</tr>
+				</table>
+				</div>
+		</div>
 	</body>
 	<footer>
 	<div style="display:flex; justify-content: center; align-items: center;">Copyright &copy; 2023 Career<span style="color:red;">Portal</span></div>
