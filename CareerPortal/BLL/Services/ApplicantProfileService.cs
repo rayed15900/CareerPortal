@@ -31,7 +31,8 @@ namespace BLL.Services
                 Phone = applicant.Phone,
                 Nationality = applicant.Nationality,
                 Address = applicant.Address,
-                About = applicant.About
+                Gender = applicant.Gender,
+                DOB= applicant.DOB
             };
         }
         static ApplicantProfile Convert(ApplicantProfileDTO applicant)
@@ -45,7 +46,8 @@ namespace BLL.Services
                 Phone = applicant.Phone,
                 Nationality = applicant.Nationality,
                 Address = applicant.Address,
-                About = applicant.About
+                Gender = applicant.Gender,
+                DOB = applicant.DOB
             };
         }
         public static List<ApplicantProfileDTO> Read()

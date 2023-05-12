@@ -34,7 +34,8 @@
                         Phone = c.String(nullable: false, maxLength: 11),
                         Nationality = c.String(nullable: false),
                         Address = c.String(nullable: false),
-                        About = c.String(maxLength: 100),
+                        Gender = c.String(nullable: false, maxLength: 20),
+                        DOB = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Users", t => t.UId, cascadeDelete: false)

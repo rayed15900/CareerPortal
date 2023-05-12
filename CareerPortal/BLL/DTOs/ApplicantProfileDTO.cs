@@ -17,6 +17,7 @@ namespace BLL.DTOs
         public string Phone { get; set; }
         public string Nationality { get; set; }
         public string Address { get; set; }
-        public string About { get; set; }
+        public string Gender { get; set; }
+        public string DOB { get; set; }
     }
 }
