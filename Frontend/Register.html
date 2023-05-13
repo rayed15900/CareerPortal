@@ -7,10 +7,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
         var app = angular.module("app", []);
-        app.controller('registerApplicantCtrl', function ($scope, $http) {
-			$scope.registerApplicant = function () {
-				var x = $scope.applicant;
-				debugger;
+        app.controller('registerEmployerCtrl', function ($scope, $http) {
+			$scope.registerEmployer = function () {
+				$scope.u.Type = "Employer";
+				var body = $scope.u;
+                $http.post("https://localhost:44354/api/Users/Create", body).then(function (resp) {
+                    $scope.users = resp.data;
+                }, function (err) {
+                    $scope.msg = "No data found";
+                });
             };
         })
 	</script>
@@ -43,11 +48,11 @@
 		<div class="row justify-content-center align-items-center h-100">
 			<div class="col-12 col-lg-9 col-xl-7">
 				<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-					<div class="card-body p-4 p-md-5">
+					<div class="card-body p-4 p-md-5" ng-controller="registerEmployerCtrl">
 						<div class="row">
 							<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Employer Registration Form</h3>
 						</div>
-						<form>
+						<form ng-submit="registerEmployer()">
 							<div class="row">
 								<div class="col-md-6 mb-4">
 									<div class="form-outline">
@@ -87,7 +92,7 @@
 
 									<div class="form-outline">
 										<label class="form-label" for="">Username</label>
-										<input type="email" id="" class="form-control form-control-lg" />
+										<input type="text" ng-model="u.Username" id="" class="form-control form-control-lg" />
 									</div>
 
 								</div>
@@ -95,7 +100,7 @@
 
 									<div class="form-outline">
 										<label class="form-label" for="">Password</label>
-										<input type="tel" id="" class="form-control form-control-lg" />
+										<input type="text" ng-model="u.Password" id="" class="form-control form-control-lg" />
 									</div>
 
 								</div>

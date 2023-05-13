@@ -54,9 +54,9 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202305121010300_AddToDatabase.cs" />
-    <Compile Include="Migrations\202305121010300_AddToDatabase.designer.cs">
-      <DependentUpon>202305121010300_AddToDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\202305121037285_AddToDatabase.cs" />
+    <Compile Include="Migrations\202305121037285_AddToDatabase.designer.cs">
+      <DependentUpon>202305121037285_AddToDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
@@ -91,8 +91,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305121010300_AddToDatabase.resx">
-      <DependentUpon>202305121010300_AddToDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305121037285_AddToDatabase.resx">
+      <DependentUpon>202305121037285_AddToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
