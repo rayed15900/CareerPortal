@@ -8,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using AppLayer.Auth;
 
 namespace AppLayer.Controllers
 {

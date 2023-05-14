@@ -28,7 +28,7 @@ namespace DAL.Models
         [StringLength(20)]
         public string Nationality { get; set; }
         [Required]
-        public DateTime DateOfBirth { get; set; }
+        public string DateOfBirth { get; set; }
         [Required]
         public string Gender { get; set; }
 

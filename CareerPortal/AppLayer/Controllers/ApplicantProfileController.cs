@@ -43,7 +43,7 @@ namespace AppLayer.Controllers
             }
         }
         [HttpPost]
-        [Route("api/applicantprofiles/create")]
+        [Route("api/applicantprofiles/create")] 
         public HttpResponseMessage Create(ApplicantProfileDTO obj)
         {
             try

@@ -128,7 +128,7 @@
                         Email = c.String(nullable: false),
                         PhoneNumber = c.String(nullable: false, maxLength: 11),
                         Nationality = c.String(nullable: false, maxLength: 20),
-                        DateOfBirth = c.DateTime(nullable: false),
+                        DateOfBirth = c.String(nullable: false),
                         Gender = c.String(nullable: false),
                         User_Id = c.Int(nullable: false),
                     })
