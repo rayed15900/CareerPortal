@@ -7,12 +7,55 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
 		var app = angular.module("app", []);
-		app.controller('CategoryCtrl', function ($scope, $http) {
-            $http.get("https://localhost:44354/api/ManageCategory").then(function (resp) {
-				$scope.categories = resp.data;
-			}, function (err) {
-				$scope.msg = "No data found";
-			});
+        app.factory('interceptor', ['$q', '$window', function ($q, $window) {
+            var interceptor = {
+                request: function (config) {
+                    config.headers.Authorization = localStorage.getItem("TokenKey");
+                    return config;
+                },
+                response: function (response) {
+                    return response;
+                },
+                responseError: function (rejection) {
+                    if (rejection.status === 401) {
+                        $window.alert("Authorization denied");
+                        var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                        window.location.href = loc + 'Login.html';
+                    }
+                    return $q.reject(rejection);
+                }
+            };
+            return interceptor;
+        }]);
+
+        app.config(['$httpProvider', function ($httpProvider) {
+            $httpProvider.interceptors.push('interceptor');
+		}]);
+
+        app.controller('profileCtrl', function ($scope, $window, $http) {
+            $http({
+                method: 'GET',
+                url: "https://localhost:44354/api/EmployerProfiles",
+                headers: {
+                    'Authorization': localStorage.getItem("TokenKey")
+                }
+            }).then(function (resp) {
+                var allEmployers = resp.data;
+
+
+                var e = allEmployers.find(function (u) {
+                    return u.User_Id == localStorage.getItem("UserId");
+                });
+
+                if (e) {
+                    $scope.currentEmployer = e;
+                }
+
+            }, function (err) {
+                $window.alert("Authorization denied");
+                var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                window.location.href = loc + 'Login.html';
+            });
 		})
 	</script>
 
@@ -58,7 +101,7 @@
             margin: 0;
         }
 	</style>
-	<body>
+	<body ng-app="app">
 		<header>
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
@@ -77,6 +120,91 @@
 				<a style="text-decoration: none;" href="EmployerRecruitment.html">Recruitment</a>
 				<a style="text-decoration: none;" href="Login.php">Logout</a>
 			</nav>
+		</div>
+
+		<div ng-controller="profileCtrl">
+			<div class="container py-5 h-100">
+				<div class="row justify-content-center align-items-center h-100">
+					<div class="col-12 col-lg-9 col-xl-7">
+						<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+							<div class="card-body p-4 p-md-5">
+								<div class="row">
+									<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Profile</h3>
+								</div>
+								<form>
+									<div class="row">
+										<div class="col-md-6 mb-4">
+											<div class="form-outline">
+												<label class="form-label" for="">First Name</label>
+												<input type="text" id="" class="form-control form-control-lg" value="{{currentEmployer.FirstName}}" />
+											</div>
+										</div>
+										<div class="col-md-6 mb-4">
+											<div class="form-outline">
+												<label class="form-label" for="">Last Name</label>
+												<input type="text" id="" class="form-control form-control-lg" value="{{currentEmployer.LastName}}" />
+											</div>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="col-md-6 mb-4 pb-2">
+											<div class="form-outline">
+												<label class="form-label" for="">Email</label>
+												<input type="email" id="" class="form-control form-control-lg" value="{{currentEmployer.Email}}" />
+											</div>
+
+										</div>
+										<div class="col-md-6 mb-4 pb-2">
+
+											<div class="form-outline">
+												<label class="form-label" for="">Phone Number</label>
+												<input type="tel" id="" class="form-control form-control-lg" value="{{currentEmployer.PhoneNumber}}" />
+											</div>
+
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 mb-4 pb-2">
+
+											<div class="form-outline">
+												<label class="form-label" for="">Gender</label>
+												<input type="text" id="" class="form-control form-control-lg" value="{{currentEmployer.Gender}}" />
+											</div>
+
+										</div>
+										<div class="col-md-6 mb-4">
+
+											<div class="form-outline">
+												<label class="form-label" for="">Date of Birth</label>
+												<input type="text" id="" class="form-control form-control-lg" value="{{currentEmployer.DateOfBirth}}" />
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 mb-4 pb-2">
+
+											<div class="form-outline">
+												<label class="form-label" for="">Nationality</label>
+												<input type="text" id="" class="form-control form-control-lg" value="{{currentEmployer.Nationality}}" />
+											</div>
+
+										</div>
+									</div>
+
+									<div class="mt-4 pt-2">
+										<input class="btn btn-primary btn-lg" type="submit" value="Edit" />
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer class="bg-black text-center text-white fixed-bottom">

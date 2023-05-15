@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202305141504146_AddToDatabase.designer.cs">
       <DependentUpon>202305141504146_AddToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305151420136_JobPost.cs" />
+    <Compile Include="Migrations\202305151420136_JobPost.designer.cs">
+      <DependentUpon>202305151420136_JobPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
     <Compile Include="Models\ApplicantJobApply.cs" />
@@ -93,6 +97,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305141504146_AddToDatabase.resx">
       <DependentUpon>202305141504146_AddToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305151420136_JobPost.resx">
+      <DependentUpon>202305151420136_JobPost.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
