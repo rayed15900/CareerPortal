@@ -6,16 +6,20 @@
 	</head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
-		var app = angular.module("app",[]);
-		app.controller('profileCtrl',function($scope,$http){
-			$http.get("https://localhost:44354/api/applicantprofiles/2").then(function(resp){
-				$scope.profile = resp.data;
+	var app = angular.module("app",[]);
+		app.controller('educationCtrl',function($scope,$http){
+		$scope.load = function(){
+			var v = $scope.l;
+			$http.post("https://localhost:44354/api/applicanteduqualifications/create",v).then(function(resp){
+				alert("Educational Qualification Added Successfully");
+				window.location.href = "ApplicantEducation.html";
 			},function(err){
-				$scope.msg = "No data found";
+				alert("Something went wrong");
 			});
-		})
+		};
+		})	
 	</script>
-
+	
 	<style>
         span a:hover {
             background: #464646;
@@ -58,8 +62,9 @@
             margin: 0;
         }
 	</style>
+	
 	<body ng-app="app">
-	<div ng-controller="profileCtrl">
+	<div ng-controller="educationCtrl">
 		<header>
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
@@ -68,7 +73,7 @@
 				</div>
 			</div>
 		</header>
-
+		
 		<div class="dashboard">
 			<h1 class="account">Applicant</h1>
 			<nav>
@@ -80,27 +85,27 @@
 				<a style="text-decoration: none;" href="Login.php">Logout</a>
 			</nav>
 		</div>
-		
+
 		<div class="container py-5 h-100">
 			<div class="row justify-content-center align-items-center h-100">
 				<div class="col-12 col-lg-9 col-xl-7">
 					<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
 						<div class="card-body p-4 p-md-5">
 							<div class="row">
-								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Profile</h3>	
+								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Educational Qualifications</h3>
 							</div>
 							<form>
 								<div class="row">
 									<div class="col-md-6 mb-4">
 										<div class="form-outline">
-											<label class="form-label" for="">Name</label>
-											<input type="text" id="" class="form-control form-control-lg" value="{{profile.Name}}"/>
+											<label class="form-label" for="">Applicant Id</label>
+											<input type="text" ng-model="l.ApplicantId" id="" class="form-control form-control-lg" />
 										</div>
 									</div>
 									<div class="col-md-6 mb-4">
 										<div class="form-outline">
-											<label class="form-label" for="">Address</label>
-											<input type="text" id="" class="form-control form-control-lg" value="{{profile.Address}}" />
+											<label class="form-label" for="">Level of Education</label>
+											<input type="text" ng-model="l.LevelofEducation" id="" class="form-control form-control-lg" />
 										</div>
 									</div>
 								</div>
@@ -108,17 +113,18 @@
 
 								<div class="row">
 									<div class="col-md-6 mb-4 pb-2">
+
 										<div class="form-outline">
-											<label class="form-label" for="">Email</label>
-											<input type="email" id="" class="form-control form-control-lg" value="{{profile.Mail}}" />
+											<label class="form-label" for="">Institution Name</label>
+											<input type="text" ng-model="l.InstituteName" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
 									<div class="col-md-6 mb-4 pb-2">
 
 										<div class="form-outline">
-											<label class="form-label" for="">Phone Number</label>
-											<input type="tel" id="" class="form-control form-control-lg" value="{{profile.Phone}}" />
+											<label class="form-label" for="">Year of Passing</label>
+											<input type="int" ng-model="l.YearofPassing" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
@@ -128,33 +134,16 @@
 									<div class="col-md-6 mb-4 pb-2">
 
 										<div class="form-outline">
-											<label class="form-label" for="">Gender</label>
-											<input type="text" id="" class="form-control form-control-lg" value="{{profile.Gender}}" />
+											<label class="form-label" for="">Degree</label>
+											<input type="text" ng-model="l.Degree" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
-									<div class="col-md-6 mb-4">
-
-										<div class="form-outline">
-											<label class="form-label" for="">Date of Birth</label>
-											<input type="text" id="" class="form-control form-control-lg" value="{{profile.DOB}}" />
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-6 mb-4 pb-2">
-
-										<div class="form-outline">
-											<label class="form-label" for="">Nationality</label>
-											<input type="text" id="" class="form-control form-control-lg" value="{{profile.Nationality}}" />
-										</div>
-
-									</div>
+								
 								</div>
 
 								<div class="mt-4 pt-2">
-									<input class="btn btn-primary btn-lg" type="submit" value="Edit" />
+									<input class="btn btn-primary btn-lg" ng-click="load()" type="submit" value="Add" />
 								</div>
 
 							</form>
@@ -163,6 +152,7 @@
 				</div>
 			</div>
 		</div>
+
 
 		<footer class="bg-black text-center text-white fixed-bottom">
 			<div class="text-center p-1 d-flex justify-content-between align-items-center">
