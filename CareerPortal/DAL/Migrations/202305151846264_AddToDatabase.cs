@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class DBInit : DbMigration
+    public partial class AddToDatabase : DbMigration
     {
         public override void Up()
         {
@@ -97,7 +97,7 @@
                         RequiredSkills = c.String(nullable: false, maxLength: 200),
                         EducationLevel = c.String(nullable: false, maxLength: 200),
                         Experience = c.String(nullable: false, maxLength: 20),
-                        ApplicationDeadline = c.DateTime(nullable: false),
+                        ApplicationDeadline = c.String(nullable: false),
                         CompanyName = c.String(nullable: false, maxLength: 20),
                         CompanyMail = c.String(nullable: false),
                         Employer_Id = c.Int(nullable: false),

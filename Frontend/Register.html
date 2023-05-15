@@ -35,11 +35,7 @@
 
                             $http.post("https://localhost:44354/api/EmployerProfiles/Create", employer).then(function (resp) {
 								$scope.users = resp.data;
-<<<<<<< HEAD
 								var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
-=======
-								var loc = 'D:/Semester-10/ADVANCED PROGRAMMING WITH DOTNET/1PROJECT/CareerPortal/Frontend/';
->>>>>>> a832d2cfdf05d11ab96f645b7f962c1fe5af9f11
                                 window.location.href = loc + 'Login.html';
                             }, function (err) {
                                 $scope.msg = "No data found";
