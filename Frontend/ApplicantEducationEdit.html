@@ -8,14 +8,28 @@
 	<script>
 		var app = angular.module("app",[]);
 		app.controller('educationViewCtrl',function($scope,$http){
-			$http.get("https://localhost:44354/api/applicanteduqualifications").then(function(resp){
-				$scope.eduqualifications = resp.data;
+			$scope.hideSections = true;
+			var urlParams = new URLSearchParams(window.location.search);
+			var id = urlParams.get('Id');
+			var Aid = urlParams.get('AId');
+			$scope.l = { Id: id, ApplicantId: Aid };
+			$http.get("https://localhost:44354/api/applicanteduqualifications/"+id).then(function(resp){
+				$scope.edu = resp.data;	
 			},function(err){
-				$scope.msg = "No data found";
+				alert("No data found");
 			});
 		})	
-
-		
+		app.controller('educationUpdateCtrl',function($scope,$http){
+		$scope.load = function(){
+			var v = $scope.l;
+			$http.post("https://localhost:44354/api/applicanteduqualifications/update",v).then(function(resp){
+				alert("Educational Qualification updated Successfully");
+				window.location.href = "ApplicantEducation.html";
+			},function(err){
+				alert("Something went wrong");
+			});
+		};
+		})	
 	</script>
 	
 	<style>
@@ -59,27 +73,11 @@
             padding-bottom: 30px;
             margin: 0;
         }
-		table {
-        border-collapse: collapse;
-        width: 70%;
-		}
-
-		th, td {
-			border: 1px solid black;
-			padding: 8px;
-		}
-
-		th {
-			background-color: #f2f2f2;
-		}
-
-		tr:nth-child(odd) {
-			background-color: #dddddd;
-		}
 	</style>
 	
 	<body ng-app="app">
 	<div ng-controller="educationViewCtrl">
+	<div ng-controller="educationUpdateCtrl">
 		<header>
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
@@ -107,40 +105,79 @@
 					<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
 						<div class="card-body p-4 p-md-5">
 							<div class="row">
-								<h3 class="col-md-10 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Educational Qualifications</h3>
+								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Educational Qualifications</h3>
 							</div>
-							<div class="row">
-							<table>
-								<tr>
-									<th>Id</th>
-									<th>ApplicantId</th>
-									<th>Level of Education</th>
-									<th>Institute Name</th>
-									<th>Year of passing</th>
-									<th>Degree</th>
-									<th>Modify</th>
-								</tr>
-								<tr ng-repeat="e in eduqualifications">
-									<td>{{e.Id}}</td>
-									<td>{{e.ApplicantId}}</td>
-									<td>{{e.LevelofEducation}}</td>
-									<td>{{e.InstituteName}}</td>
-									<td>{{e.YearofPassing}}</td>
-									<td>{{e.Degree}}</td>
-									<td><a href="ApplicantEducationEdit.html?Id={{e.Id}}&AId={{e.ApplicantId}}" class="btn btn-primary">Edit</a></td>
-								</tr>
-							</table>
-							</div>
-							
-							<div class="mt-4 pt-2">
-								<a href="ApplicantEducationAdd.html" class="btn btn-success">Add</a>
-							</div>
+							<form>
+								<div class="row" ng-hide="hideSections">
+									<div class="col-md-6 mb-4">
+										<div class="form-outline">
+											<label class="form-label" for="">Id</label>
+											<input type="text" id="" class="form-control form-control-lg" ng-model="l.Id" readonly/>
+										</div>
+									</div>
+								
+
+									<div class="col-md-6 mb-4 pb-2">
+
+										<div class="form-outline">
+											<label class="form-label" for="">Applicant Id</label>
+											<input type="text" id="" class="form-control form-control-lg" ng-model="l.ApplicantId" readonly/>
+										</div>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-4">
+										<div class="form-outline">
+											<label class="form-label" for="">Level of Education</label>
+											<input type="text" id="" class="form-control form-control-lg" placeholder="{{edu.LevelofEducation}}" ng-model="l.LevelofEducation"/>
+										</div>
+									</div>
+								
+
+									<div class="col-md-6 mb-4 pb-2">
+
+										<div class="form-outline">
+											<label class="form-label" for="">Institution Name</label>
+											<input type="text" id="" class="form-control form-control-lg" placeholder="{{edu.InstituteName}}" ng-model="l.InstituteName"/>
+										</div>
+
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6 mb-4 pb-2">
+
+										<div class="form-outline">
+											<label class="form-label" for="">Year of Passing</label>
+											<input type="int" id="" class="form-control form-control-lg" placeholder="{{edu.YearofPassing}}" ng-model="l.YearofPassing"/>
+										</div>
+
+									</div>
+
+									<div class="col-md-6 mb-4 pb-2">
+
+										<div class="form-outline">
+											<label class="form-label" for="">Degree</label>
+											<input type="text" id="" class="form-control form-control-lg" placeholder="{{edu.Degree}}" ng-model="l.Degree"/>
+										</div>
+
+									</div>
+								
+								</div>
+
+								<div class="mt-4 pt-2">
+									<input class="btn btn-primary btn-lg" ng-click="load()" type="submit" value="Add" />
+								</div>
+
+							</form>
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
+
 		</div>
-		
 
 
 		<footer class="bg-black text-center text-white fixed-bottom">

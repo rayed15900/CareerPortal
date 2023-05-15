@@ -1,4 +1,5 @@
-﻿using BLL.DTOs;
+﻿using AppLayer.Auth;
+using BLL.DTOs;
 using BLL.Services;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace AppLayer.Controllers
     [EnableCors("*","*","*")]
     public class ApplicantProfileController : ApiController
     {
+        [Applicant]
         [HttpGet]
         [Route("api/applicantprofiles")]
         public HttpResponseMessage AllApplicants()
@@ -28,6 +30,7 @@ namespace AppLayer.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
+        [Applicant]
         [HttpGet]
         [Route("api/applicantprofiles/{id}")]
         public HttpResponseMessage Read(int id)
