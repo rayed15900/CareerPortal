@@ -1,4 +1,5 @@
-﻿using BLL.DTOs;
+﻿using AppLayer.Auth;
+using BLL.DTOs;
 using BLL.Services;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace AppLayer.Controllers
     [EnableCors("*", "*", "*")]
     public class ApplicantEducationalQualificationController : ApiController
     {
+        
         [HttpGet]
         [Route("api/applicanteduqualifications")]
         public HttpResponseMessage AllApplicantsEduQualifications()

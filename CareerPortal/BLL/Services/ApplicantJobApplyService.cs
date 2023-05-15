@@ -30,7 +30,8 @@ namespace BLL.Services
                 Phone = applicant.Phone,
                 ExpectedSalary = applicant.ExpectedSalary,
                 Mail = applicant.Mail,
-                StartTime = applicant.StartTime
+                StartTime = applicant.StartTime,
+                JobId = applicant.JobId
             };
         }
         static ApplicantJobApply Convert(ApplicantJobApplyDTO applicant)
@@ -43,7 +44,8 @@ namespace BLL.Services
                 Phone = applicant.Phone,
                 ExpectedSalary = applicant.ExpectedSalary,
                 Mail = applicant.Mail,
-                StartTime = applicant.StartTime
+                StartTime = applicant.StartTime,
+                JobId = applicant.JobId
             };
         }
         public static List<ApplicantJobApplyDTO> Read()

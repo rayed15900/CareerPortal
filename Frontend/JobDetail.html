@@ -6,18 +6,18 @@
 	</head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
-	var app = angular.module("app",[]);
-		app.controller('educationCtrl',function($scope,$http){
-		$scope.load = function(){
-			var v = $scope.l;
-			$http.post("https://localhost:44354/api/applicanteduqualifications/create",v).then(function(resp){
-				alert("Educational Qualification Added Successfully");
-				window.location.href = "ApplicantEducation.html";
+        var app = angular.module("app",[]);
+		app.controller('jobViewCtrl',function($scope,$http){
+			var urlParams = new URLSearchParams(window.location.search);
+			var id = urlParams.get('Id');
+			$scope.l = { Id: id};
+			$http.get("https://localhost:44354/api/EmployerJobPosts/"+id).then(function(resp){
+				$scope.job = resp.data;	
 			},function(err){
-				alert("Something went wrong");
+				alert("No data found");
 			});
-		};
 		})	
+		
 	</script>
 	
 	<style>
@@ -46,6 +46,10 @@
 			border-bottom: 3px outset white;
 			margin-bottom: 0;
 		}
+        .job {
+            margin-top: 15px; 
+            padding-top: 15px;
+        }
 
         nav {
             margin: 0;
@@ -61,14 +65,33 @@
             padding-bottom: 30px;
             margin: 0;
         }
+		table {
+        border-collapse: collapse;
+        width: 70%;
+		}
+
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #dddddd;
+		}
+
 	</style>
 	
 	<body ng-app="app">
-	<div ng-controller="educationCtrl">
+	<div ng-controller="jobViewCtrl">
 		<header>
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
 				<div>
+					<!-- <a href="ApplicantProfile.html" class="h3 text-light text-decoration-none m-3 p-2">{{currentApplicant.Name}}</a> -->
 					<a href="Login.html" class="h3 text-light text-decoration-none text-center m-3 p-2">Logout</a>
 				</div>
 			</div>
@@ -92,61 +115,44 @@
 					<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
 						<div class="card-body p-4 p-md-5">
 							<div class="row">
-								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Educational Qualifications</h3>
+								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Job Detail</h3>	
 							</div>
-							<form>
-								<div class="row">
-									<div class="col-md-6 mb-4">
-										<div class="form-outline">
-											<label class="form-label" for="">Applicant Id</label>
-											<input type="text" ng-model="l.ApplicantId" id="" class="form-control form-control-lg" />
-										</div>
-									</div>
-									<div class="col-md-6 mb-4">
-										<div class="form-outline">
-											<label class="form-label" for="">Level of Education</label>
-											<input type="text" ng-model="l.LevelofEducation" id="" class="form-control form-control-lg" />
-										</div>
-									</div>
-								</div>
+                            <div class="row">
+								<h5 class="col-md-6 mb-4">{{job.Title}}</h5>	
+                                <h6>{{job.CompanyName}}</h6>
+							</div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4" >
+                                    <h6 class="job">Job Description</h6>
+                                    <span>{{job.Description}}</span>
+                                    <h6 class="job">Educational Requirements</h6>
+                                    <span>{{job.EducationLevel}}</span>
+                                    <h6 class="job">Experience Requirements</h6>
+                                    <span>{{job.Experience}}</span>
+                                    <h6 class="job">Employment Status</h6>
+                                    <span>{{job.Type}}</span>
+                                    <h6 class="job">Salary</h6>
+                                    <span>{{job.Salary}}</span>
+                                </div>
+                                <div class="col-md-6 mb-4" >
+                                    <h6 class="job">Required skills</h6>
+                                    <span>{{job.RequiredSkills}}</span>
+                                    <h6 class="job">Location</h6>
+                                    <span>{{job.Location}}</span>
+                                    <h6 class="job">Company Mail</h6>
+                                    <span>{{job.CompanyMail}}</span>
+                                    <h6 class="job">Application Deadline</h6>
+                                    <span>{{job.ApplicationDeadline}}</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+								<a href="JobApply.html?Id={{job.Id}}" class="btn btn-success">Apply</a>
+							</div>
 
 
-								<div class="row">
-									<div class="col-md-6 mb-4 pb-2">
 
-										<div class="form-outline">
-											<label class="form-label" for="">Institution Name</label>
-											<input type="text" ng-model="l.InstituteName" id="" class="form-control form-control-lg" />
-										</div>
-
-									</div>
-									<div class="col-md-6 mb-4 pb-2">
-
-										<div class="form-outline">
-											<label class="form-label" for="">Year of Passing</label>
-											<input type="int" ng-model="l.YearofPassing" id="" class="form-control form-control-lg" />
-										</div>
-
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-6 mb-4 pb-2">
-
-										<div class="form-outline">
-											<label class="form-label" for="">Degree</label>
-											<input type="text" ng-model="l.Degree" id="" class="form-control form-control-lg" />
-										</div>
-
-									</div>
-								
-								</div>
-
-								<div class="mt-4 pt-2">
-									<input class="btn btn-primary btn-lg" ng-click="load()" type="submit" value="Add" />
-								</div>
-
-							</form>
+							
 						</div>
 					</div>
 				</div>

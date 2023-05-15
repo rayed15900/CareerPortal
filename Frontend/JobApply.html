@@ -7,12 +7,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
 	var app = angular.module("app",[]);
-		app.controller('educationCtrl',function($scope,$http){
-		$scope.load = function(){
+		app.controller('jobApplyCtrl',function($scope,$http){
+            $scope.hideSections = true;
+			var urlParams = new URLSearchParams(window.location.search);
+			var id = urlParams.get('Id');
+			$scope.l = { JobId: id};   
+		    $scope.load = function(){ 
 			var v = $scope.l;
-			$http.post("https://localhost:44354/api/applicanteduqualifications/create",v).then(function(resp){
-				alert("Educational Qualification Added Successfully");
-				window.location.href = "ApplicantEducation.html";
+			$http.post("https://localhost:44354/api/applicantappliedjobs/create",v).then(function(resp){
+				alert("Job applied Successfully");
+				window.location.href = "ApplicantDashboard.html";
 			},function(err){
 				alert("Something went wrong");
 			});
@@ -64,7 +68,7 @@
 	</style>
 	
 	<body ng-app="app">
-	<div ng-controller="educationCtrl">
+	<div ng-controller="jobApplyCtrl">
 		<header>
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
@@ -92,9 +96,17 @@
 					<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
 						<div class="card-body p-4 p-md-5">
 							<div class="row">
-								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Applicant Educational Qualifications</h3>
+								<h3 class="col-md-8 mb-4 pb-2 pb-md-0 mb-md-5">Job Application</h3>
 							</div>
 							<form>
+                                <div class="row" ng-hide="hideSections">
+									<div class="col-md-6 mb-4">
+										<div class="form-outline">
+											<label class="form-label" for="">JobId</label>
+											<input type="text" id="" class="form-control form-control-lg" ng-model="l.JobId" readonly/>
+										</div>
+									</div>
+                                </div>
 								<div class="row">
 									<div class="col-md-6 mb-4">
 										<div class="form-outline">
@@ -104,8 +116,8 @@
 									</div>
 									<div class="col-md-6 mb-4">
 										<div class="form-outline">
-											<label class="form-label" for="">Level of Education</label>
-											<input type="text" ng-model="l.LevelofEducation" id="" class="form-control form-control-lg" />
+											<label class="form-label" for="">Position Name</label>
+											<input type="text" ng-model="l.PositionName" id="" class="form-control form-control-lg" />
 										</div>
 									</div>
 								</div>
@@ -115,16 +127,16 @@
 									<div class="col-md-6 mb-4 pb-2">
 
 										<div class="form-outline">
-											<label class="form-label" for="">Institution Name</label>
-											<input type="text" ng-model="l.InstituteName" id="" class="form-control form-control-lg" />
+											<label class="form-label" for="">Phone</label>
+											<input type="text" ng-model="l.Phone" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
 									<div class="col-md-6 mb-4 pb-2">
 
 										<div class="form-outline">
-											<label class="form-label" for="">Year of Passing</label>
-											<input type="int" ng-model="l.YearofPassing" id="" class="form-control form-control-lg" />
+											<label class="form-label" for="">Email</label>
+											<input type="int" ng-model="l.Mail" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
@@ -134,8 +146,16 @@
 									<div class="col-md-6 mb-4 pb-2">
 
 										<div class="form-outline">
-											<label class="form-label" for="">Degree</label>
-											<input type="text" ng-model="l.Degree" id="" class="form-control form-control-lg" />
+											<label class="form-label" for="">Expected Salary</label>
+											<input type="text" ng-model="l.ExpectedSalary" id="" class="form-control form-control-lg" />
+										</div>
+
+									</div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+										<div class="form-outline">
+											<label class="form-label" for="">Start time</label>
+											<input type="text" ng-model="l.StartTime" id="" class="form-control form-control-lg" />
 										</div>
 
 									</div>
@@ -143,7 +163,7 @@
 								</div>
 
 								<div class="mt-4 pt-2">
-									<input class="btn btn-primary btn-lg" ng-click="load()" type="submit" value="Add" />
+									<input class="btn btn-success btn-lg" ng-click="load()" type="submit" value="Apply" />
 								</div>
 
 							</form>

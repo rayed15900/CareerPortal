@@ -15,6 +15,7 @@ namespace BLL.DTOs
         public string Phone { get; set; }
         public string Mail { get; set; }
         public string ExpectedSalary { get; set; }  
-        public DateTime StartTime { get; set; }
+        public string StartTime { get; set; }
+        public int JobId { get; set; }
     }
 }

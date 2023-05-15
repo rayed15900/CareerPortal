@@ -6,14 +6,70 @@
 	</head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script>
-		var app = angular.module("app",[]);
-		app.controller('educationViewCtrl',function($scope,$http){
-			$http.get("https://localhost:44354/api/applicanteduqualifications").then(function(resp){
-				$scope.eduqualifications = resp.data;
-			},function(err){
-				$scope.msg = "No data found";
+
+		var app = angular.module("app", []);
+		app.factory('interceptor', ['$q', '$window', function ($q, $window) {
+			var interceptor = {
+				request: function (config) {
+					config.headers.Authorization = localStorage.getItem("TokenKey");
+					return config;
+				},
+				response: function (response) {
+					return response;
+				},
+				responseError: function (rejection) {
+					if (rejection.status === 401) {
+						$window.alert("Authorization denied");
+						var loc = 'D:/Semester-10/ADVANCED PROGRAMMING WITH DOTNET/1PROJECT/CareerPortal/Frontend/';
+						window.location.href = loc + 'Login.html';
+					}
+					return $q.reject(rejection);
+				}
+			};
+			return interceptor;
+		}]);
+
+		app.config(['$httpProvider', function ($httpProvider) {
+			$httpProvider.interceptors.push('interceptor');
+		}]);
+
+		app.controller('educationViewCtrl', function ($scope, $window, $http) {
+			$http({
+				method: 'GET',
+				url: "https://localhost:44354/api/ApplicantProfiles",
+				headers: {
+					'Authorization': localStorage.getItem("TokenKey")
+				}
+			}).then(function (resp) {
+				var allApplicant = resp.data;
+
+
+				var e = allApplicant.find(function (u) {
+					return u.User_Id == localStorage.getItem("UId");
+				});
+
+				if (e) {
+					$scope.currentApplicant = e;
+					$http.get("https://localhost:44354/api/applicanteduqualifications")
+						.then(function(resp) {
+							debugger;
+							$scope.edu = resp.data.filter(function(item) {
+								if(item.ApplicantId === $scope.currentApplicant.Id)
+								return item;
+								
+							});
+						})
+					.catch(function(err) {
+						alert("An error occurred");
+					});
+				}
+
+			}, function (err) {
+				$window.alert("Authorization denied");
+				var loc = 'D:/Semester-10/ADVANCED PROGRAMMING WITH DOTNET/1PROJECT/CareerPortal/Frontend/';
+				window.location.href = loc + 'Login.html';
 			});
-		})	
+		})
 
 		
 	</script>
@@ -84,6 +140,7 @@
 			<div class="bg-black p-3 d-flex justify-content-between align-items-center">
 				<a href="Index.html" class="h1 text-light text-decoration-none">Career<span class="text-secondary">Portal</span></a>
 				<div>
+					<a href="ApplicantProfile.html" class="h3 text-light text-decoration-none m-3 p-2">{{currentApplicant.Name}}</a>
 					<a href="Login.html" class="h3 text-light text-decoration-none text-center m-3 p-2">Logout</a>
 				</div>
 			</div>
@@ -97,7 +154,7 @@
 				<a style="text-decoration: none;" href="ApplicantEducation.html">Educational Qualification</a>
 				<a style="text-decoration: none;" href="AppliedJobs.html">Applied Jobs</a>
 				<a style="text-decoration: none;" href="ApplicantNotifications.html">Notification</a>
-				<a style="text-decoration: none;" href="Login.php">Logout</a>
+				<a style="text-decoration: none;" href="Login.html">Logout</a>
 			</nav>
 		</div>
 
@@ -120,7 +177,8 @@
 									<th>Degree</th>
 									<th>Modify</th>
 								</tr>
-								<tr ng-repeat="e in eduqualifications">
+
+								<tr ng-repeat="e in edu">
 									<td>{{e.Id}}</td>
 									<td>{{e.ApplicantId}}</td>
 									<td>{{e.LevelofEducation}}</td>
@@ -129,6 +187,7 @@
 									<td>{{e.Degree}}</td>
 									<td><a href="ApplicantEducationEdit.html?Id={{e.Id}}&AId={{e.ApplicantId}}" class="btn btn-primary">Edit</a></td>
 								</tr>
+							</div>
 							</table>
 							</div>
 							

@@ -25,7 +25,10 @@ namespace DAL.Models
         [Required]
         public string ExpectedSalary { get; set; }
         [Required]
-        public DateTime StartTime { get; set; }
+        public string StartTime { get; set; }
+        [Required]
+        public int JobId { get; set; }
+        public virtual EmployerJobPost EmployerJobPost { get; set; }
         public virtual ApplicantProfile Applicant {  get; set; }
         public virtual ICollection<AppliedJob> AppliedJobs { get; set; }
         public ApplicantJobApply() 

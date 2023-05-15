@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class DBInit : DbMigration
+    public partial class DbInit : DbMigration
     {
         public override void Up()
         {
@@ -17,11 +17,15 @@
                         Phone = c.String(nullable: false, maxLength: 11),
                         Mail = c.String(nullable: false),
                         ExpectedSalary = c.String(nullable: false),
-                        StartTime = c.DateTime(nullable: false),
+                        StartTime = c.String(nullable: false),
+                        JobId = c.Int(nullable: false),
+                        EmployerJobPost_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.ApplicantProfiles", t => t.ApplicantId, cascadeDelete: false)
-                .Index(t => t.ApplicantId);
+                .ForeignKey("dbo.EmployerJobPosts", t => t.EmployerJobPost_Id)
+                .Index(t => t.ApplicantId)
+                .Index(t => t.EmployerJobPost_Id);
             
             CreateTable(
                 "dbo.ApplicantProfiles",
@@ -203,6 +207,7 @@
             DropForeignKey("dbo.EmployerRecruitments", "Employer_Id", "dbo.EmployerProfiles");
             DropForeignKey("dbo.EmployerRecruitments", "JobPost_Id", "dbo.EmployerJobPosts");
             DropForeignKey("dbo.EmployerRecruitments", "Applicant_Id", "dbo.ApplicantProfiles");
+            DropForeignKey("dbo.ApplicantJobApplies", "EmployerJobPost_Id", "dbo.EmployerJobPosts");
             DropForeignKey("dbo.AppliedJobs", "ApplicantJobApply_Id", "dbo.ApplicantJobApplies");
             DropForeignKey("dbo.AppliedJobs", "JobId", "dbo.EmployerJobPosts");
             DropForeignKey("dbo.EmployerJobPosts", "Employer_Id", "dbo.EmployerProfiles");
@@ -226,6 +231,7 @@
             DropIndex("dbo.AppliedJobs", new[] { "ApplicantId" });
             DropIndex("dbo.ApplicantEducationalQualifications", new[] { "ApplicantId" });
             DropIndex("dbo.ApplicantProfiles", new[] { "UId" });
+            DropIndex("dbo.ApplicantJobApplies", new[] { "EmployerJobPost_Id" });
             DropIndex("dbo.ApplicantJobApplies", new[] { "ApplicantId" });
             DropTable("dbo.Tokens");
             DropTable("dbo.ManageUsers");

@@ -24,5 +24,5 @@ D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPort
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddToDatabase.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DBInit.resources
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DbInit.resources
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

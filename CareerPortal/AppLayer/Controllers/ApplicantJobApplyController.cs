@@ -1,4 +1,5 @@
-﻿using BLL.DTOs;
+﻿using AppLayer.Auth;
+using BLL.DTOs;
 using BLL.Services;
 using System;
 using System.Collections.Generic;
@@ -6,9 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace AppLayer.Controllers
 {
+    [EnableCors("*","*","*")]
     public class ApplicantJobApplyController : ApiController
     {
         [HttpGet]
@@ -25,6 +28,7 @@ namespace AppLayer.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
+        [Applicant]
         [HttpGet]
         [Route("api/applicantappliedjobs/{id}")]
         public HttpResponseMessage Read(int id)
