@@ -10,19 +10,10 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.dll
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.xml
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.dll
-D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddToDatabase.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+<<<<<<< HEAD
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DbInit.resources
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+=======
+>>>>>>> 0e61077f4ee42d6daa9d8df37d99ee495734e742

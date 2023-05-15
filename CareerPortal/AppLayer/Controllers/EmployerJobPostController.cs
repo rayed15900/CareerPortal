@@ -11,10 +11,14 @@ using System.Web.Http.Cors;
 
 namespace AppLayer.Controllers
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0e61077f4ee42d6daa9d8df37d99ee495734e742
     [EnableCors("*", "*", "*")]
     public class EmployerJobPostController : ApiController
     {
+        [Employer]
         [HttpGet]
         [Route("api/EmployerJobPosts")]
         public HttpResponseMessage Read()

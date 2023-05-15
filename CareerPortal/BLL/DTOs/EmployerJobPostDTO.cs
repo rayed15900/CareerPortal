@@ -30,7 +30,7 @@ namespace BLL.DTOs
         [Required]
         public string Experience { get; set; }
         [Required]
-        public DateTime ApplicationDeadline { get; set; }
+        public string ApplicationDeadline { get; set; }
         [Required]
         public string CompanyName { get; set; }
         [Required]

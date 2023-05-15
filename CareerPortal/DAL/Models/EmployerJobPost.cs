@@ -36,7 +36,7 @@ namespace DAL.Models
         [StringLength(20)]
         public string Experience { get; set; }
         [Required]
-        public DateTime ApplicationDeadline { get; set; }
+        public string ApplicationDeadline { get; set; }
         [Required]
         [StringLength(20)]
         public string CompanyName { get; set; }
