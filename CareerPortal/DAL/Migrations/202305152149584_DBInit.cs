@@ -3,11 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-<<<<<<<< HEAD:CareerPortal/DAL/Migrations/202305152009326_DbInit.cs
-    public partial class DbInit : DbMigration
-========
-    public partial class AddToDatabase : DbMigration
->>>>>>>> 0e61077f4ee42d6daa9d8df37d99ee495734e742:CareerPortal/DAL/Migrations/202305151846264_AddToDatabase.cs
+    public partial class DBInit : DbMigration
     {
         public override void Up()
         {

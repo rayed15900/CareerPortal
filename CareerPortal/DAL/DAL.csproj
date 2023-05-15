@@ -54,15 +54,9 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-<<<<<<< HEAD
-    <Compile Include="Migrations\202305152009326_DbInit.cs" />
-    <Compile Include="Migrations\202305152009326_DbInit.designer.cs">
-      <DependentUpon>202305152009326_DbInit.cs</DependentUpon>
-=======
-    <Compile Include="Migrations\202305151846264_AddToDatabase.cs" />
-    <Compile Include="Migrations\202305151846264_AddToDatabase.designer.cs">
-      <DependentUpon>202305151846264_AddToDatabase.cs</DependentUpon>
->>>>>>> 0e61077f4ee42d6daa9d8df37d99ee495734e742
+    <Compile Include="Migrations\202305152149584_DBInit.cs" />
+    <Compile Include="Migrations\202305152149584_DBInit.designer.cs">
+      <DependentUpon>202305152149584_DBInit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
@@ -97,13 +91,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Migrations\202305152009326_DbInit.resx">
-      <DependentUpon>202305152009326_DbInit.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Migrations\202305151846264_AddToDatabase.resx">
-      <DependentUpon>202305151846264_AddToDatabase.cs</DependentUpon>
->>>>>>> 0e61077f4ee42d6daa9d8df37d99ee495734e742
+    <EmbeddedResource Include="Migrations\202305152149584_DBInit.resx">
+      <DependentUpon>202305152149584_DBInit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
