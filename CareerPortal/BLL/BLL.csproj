@@ -48,7 +48,11 @@
     <Compile Include="DTOs\EmployerJobPostDTO.cs" />
     <Compile Include="DTOs\EmployerProfileDTO.cs" />
     <Compile Include="DTOs\EmployerRecruitmentDTO.cs" />
+    <Compile Include="DTOs\ManageApplicantDTO.cs" />
+    <Compile Include="DTOs\ManageApplicantJobApplyDTO.cs" />
     <Compile Include="DTOs\ManageCategoryDTO.cs" />
+    <Compile Include="DTOs\ManageEmployerDTO.cs" />
+    <Compile Include="DTOs\ManageEmployerJobPostDTO.cs" />
     <Compile Include="DTOs\ManageJobPostDTO.cs" />
     <Compile Include="DTOs\ManageUsersDTO.cs" />
     <Compile Include="DTOs\NotificationDTO.cs" />
@@ -63,9 +67,12 @@
     <Compile Include="Services\EmployerJobPostService.cs" />
     <Compile Include="Services\EmployerProfileService.cs" />
     <Compile Include="Services\EmployerRecruitmentService.cs" />
+    <Compile Include="Services\ManageApplicantJobApplyService.cs" />
+    <Compile Include="Services\ManageApplicantService.cs" />
     <Compile Include="Services\ManageCategoryService.cs" />
+    <Compile Include="Services\ManageEmployerJobPostService.cs" />
+    <Compile Include="Services\ManageEmployerService.cs" />
     <Compile Include="Services\ManageJobPostService.cs" />
-    <Compile Include="Services\ManageUsersService.cs" />
     <Compile Include="Services\NotificationServices.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>

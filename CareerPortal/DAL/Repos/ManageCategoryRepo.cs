@@ -36,7 +36,7 @@ namespace DAL.Repos
         public bool Update(ManageCategory obj)
         {
             var category = Read(obj.Id);
-            db.Entry(category).CurrentValues.SetValues(category);
+            db.Entry(category).CurrentValues.SetValues(obj);
             return db.SaveChanges() > 0;
         }
     }

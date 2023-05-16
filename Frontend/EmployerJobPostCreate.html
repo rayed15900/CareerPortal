@@ -19,7 +19,7 @@
                 responseError: function (rejection) {
                     if (rejection.status === 401) {
                         $window.alert("Authorization denied");
-                        var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                        var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
                         window.location.href = loc + 'Login.html';
                     }
                     return $q.reject(rejection);
@@ -64,7 +64,7 @@
 
                         $http.post("https://localhost:44354/api/EmployerJobPosts/Create", job).then(function (resp) {
                             $scope.users = resp.data;
-                            var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                            var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
                             window.location.href = loc + 'EmployerJobPost.html';
                         }, function (err) {
                             $scope.msg = "No data found";
@@ -74,7 +74,7 @@
                     }, function (err) {
                         debugger;
                         $window.alert("Authorization denied");
-                        var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                        var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
                         window.location.href = loc + 'Login.html';
                     });
 
@@ -82,7 +82,7 @@
 
             }, function (err) {
                 $window.alert("Authorization denied");
-                var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
                 window.location.href = loc + 'Login.html';
             });
 
@@ -285,7 +285,7 @@
 
     <footer class="bg-black text-center text-white fixed-bottom">
         <div class="text-center p-1 d-flex justify-content-between align-items-center">
-            <span class="h5">© 2023 CareerPortal</span>
+            <span class="h5">ï¿½ 2023 CareerPortal</span>
             <div>
                 <a class="btn btn-outline-light btn-floating m-1" href="#!">
                     <i class="bi bi-facebook"></i>

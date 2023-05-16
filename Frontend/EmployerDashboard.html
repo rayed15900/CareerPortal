@@ -19,7 +19,7 @@
             responseError: function (rejection) {
                 if (rejection.status === 401) {
                     $window.alert("Authorization denied");
-                    var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+                    var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
                     window.location.href = loc + 'Login.html';
                 }
                 return $q.reject(rejection);
@@ -53,7 +53,7 @@
 
         }, function (err) {
             $window.alert("Authorization denied");
-            var loc = 'C:/Users/rayed/OneDrive/Desktop/Git/CareerPortal/Frontend/';
+            var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
             window.location.href = loc + 'Login.html';
         });
     })

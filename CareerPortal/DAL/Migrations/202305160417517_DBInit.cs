@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddToDatabase : DbMigration
+    public partial class DBInit : DbMigration
     {
         public override void Up()
         {
@@ -44,6 +44,18 @@
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Users", t => t.UId, cascadeDelete: false)
                 .Index(t => t.UId);
+            
+            CreateTable(
+                "dbo.Notifications",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Message = c.String(nullable: false, maxLength: 100),
+                        ApplicantId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.ApplicantProfiles", t => t.ApplicantId, cascadeDelete: false)
+                .Index(t => t.ApplicantId);
             
             CreateTable(
                 "dbo.ApplicantEducationalQualifications",
@@ -217,6 +229,7 @@
             DropForeignKey("dbo.ApplicantJobApplies", "ApplicantId", "dbo.ApplicantProfiles");
             DropForeignKey("dbo.ApplicantProfiles", "UId", "dbo.Users");
             DropForeignKey("dbo.ApplicantEducationalQualifications", "ApplicantId", "dbo.ApplicantProfiles");
+            DropForeignKey("dbo.Notifications", "ApplicantId", "dbo.ApplicantProfiles");
             DropIndex("dbo.ManageUsers", new[] { "EmployerID" });
             DropIndex("dbo.ManageUsers", new[] { "ApplicantID" });
             DropIndex("dbo.ManageJobPosts", new[] { "JobId" });
@@ -230,6 +243,7 @@
             DropIndex("dbo.AppliedJobs", new[] { "JobId" });
             DropIndex("dbo.AppliedJobs", new[] { "ApplicantId" });
             DropIndex("dbo.ApplicantEducationalQualifications", new[] { "ApplicantId" });
+            DropIndex("dbo.Notifications", new[] { "ApplicantId" });
             DropIndex("dbo.ApplicantProfiles", new[] { "UId" });
             DropIndex("dbo.ApplicantJobApplies", new[] { "EmployerJobPost_Id" });
             DropIndex("dbo.ApplicantJobApplies", new[] { "ApplicantId" });
@@ -243,6 +257,7 @@
             DropTable("dbo.AppliedJobs");
             DropTable("dbo.Users");
             DropTable("dbo.ApplicantEducationalQualifications");
+            DropTable("dbo.Notifications");
             DropTable("dbo.ApplicantProfiles");
             DropTable("dbo.ApplicantJobApplies");
         }

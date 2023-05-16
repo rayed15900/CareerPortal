@@ -19,7 +19,7 @@
 				responseError: function (rejection) {
 					if (rejection.status === 401) {
 						$window.alert("Authorization denied");
-						var loc = 'D:/Semester-10/ADVANCED PROGRAMMING WITH DOTNET/1PROJECT/CareerPortal/Frontend/';
+						var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
 						window.location.href = loc + 'Login.html';
 					}
 					return $q.reject(rejection);
@@ -60,7 +60,7 @@
 
 			}, function (err) {
 				$window.alert("Authorization denied");
-				var loc = 'D:/Semester-10/ADVANCED PROGRAMMING WITH DOTNET/1PROJECT/CareerPortal/Frontend/';
+				var loc = 'E:/AIUB/Semester-10/Dot net project/Main Project/CareerPortal/Frontend/';
 				window.location.href = loc + 'Login.html';
 			});
 		})

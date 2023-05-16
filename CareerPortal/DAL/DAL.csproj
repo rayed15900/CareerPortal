@@ -54,13 +54,9 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202305152247558_AddToDatabase.cs" />
-    <Compile Include="Migrations\202305152247558_AddToDatabase.designer.cs">
-      <DependentUpon>202305152247558_AddToDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305152333391_NotificationAdded.cs" />
-    <Compile Include="Migrations\202305152333391_NotificationAdded.designer.cs">
-      <DependentUpon>202305152333391_NotificationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202305160417517_DBInit.cs" />
+    <Compile Include="Migrations\202305160417517_DBInit.designer.cs">
+      <DependentUpon>202305160417517_DBInit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
@@ -84,7 +80,11 @@
     <Compile Include="Repos\EmployerJobPostRepo.cs" />
     <Compile Include="Repos\EmployerProfileRepo.cs" />
     <Compile Include="Repos\EmployerRecruitmentRepo.cs" />
+    <Compile Include="Repos\ManageApplicantJobApplyRepo.cs" />
+    <Compile Include="Repos\ManageApplicantRepo.cs" />
     <Compile Include="Repos\ManageCategoryRepo.cs" />
+    <Compile Include="Repos\ManageEmployerJobPostRepo.cs" />
+    <Compile Include="Repos\ManageEmployerRepo.cs" />
     <Compile Include="Repos\ManageJobPostRepo.cs" />
     <Compile Include="Repos\ManageUserRepo.cs" />
     <Compile Include="Repos\NotificationRepo.cs" />
@@ -97,11 +97,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305152247558_AddToDatabase.resx">
-      <DependentUpon>202305152247558_AddToDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305152333391_NotificationAdded.resx">
-      <DependentUpon>202305152333391_NotificationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305160417517_DBInit.resx">
+      <DependentUpon>202305160417517_DBInit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

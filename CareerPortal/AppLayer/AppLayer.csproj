@@ -109,9 +109,12 @@
     <Compile Include="Controllers\EmployerJobPostController.cs" />
     <Compile Include="Controllers\EmployerProfileController.cs" />
     <Compile Include="Controllers\EmployerRecruitmentController.cs" />
+    <Compile Include="Controllers\ManageApplicantController.cs" />
+    <Compile Include="Controllers\ManageApplicantJobApplyController.cs" />
     <Compile Include="Controllers\ManageCategoryController.cs" />
+    <Compile Include="Controllers\ManageEmployerController.cs" />
+    <Compile Include="Controllers\ManageEmployerJobPostController.cs" />
     <Compile Include="Controllers\ManageJobPostController.cs" />
-    <Compile Include="Controllers\ManageUsersController.cs" />
     <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">

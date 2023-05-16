@@ -37,9 +37,13 @@ namespace DAL
         {
             return new EmployerRecruitmentRepo();
         }
-        public static IRepo<ManageUsers, int, bool> ManagerUserData()
+        public static IRepo<ApplicantProfile, int, bool> ManageApplicantData()
         {
-            return new ManageUserRepo();
+            return new ManageApplicantRepo();
+        }
+        public static IRepo<EmployerProfile, int, bool> ManageEmployerData()
+        {
+            return new ManageEmployerRepo();
         }
         public static IRepo<ManageJobPost, int, bool> ManageJobPostData()
         {
@@ -48,6 +52,14 @@ namespace DAL
         public static IRepo<ManageCategory, int, bool> ManageCategoryData()
         {
             return new ManageCategoryRepo();
+        }
+        public static IRepo<EmployerJobPost, int, bool> ManageEmployerJobPostData()
+        {
+            return new ManageEmployerJobPostRepo();
+        }
+        public static IRepo<ApplicantJobApply, int, bool> ManageApplicantJobApplyData()
+        {
+            return new ManageApplicantJobApplyRepo();
         }
 
         public static IRepo<ApplicantProfile,int,bool> ApplicantData()
