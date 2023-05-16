@@ -12,3 +12,4 @@ D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPort
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DBInit.resources
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.NotificationAdded.resources

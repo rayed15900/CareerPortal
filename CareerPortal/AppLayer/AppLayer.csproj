@@ -112,6 +112,7 @@
     <Compile Include="Controllers\ManageCategoryController.cs" />
     <Compile Include="Controllers\ManageJobPostController.cs" />
     <Compile Include="Controllers\ManageUsersController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

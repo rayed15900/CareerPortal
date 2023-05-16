@@ -19,6 +19,7 @@ namespace DAL.Models
         public DbSet<ApplicantProfile> ApplicantProfiles { get; set; }
         public DbSet<ApplicantJobApply> ApplicantJobApply { get; set; }
         public DbSet<ApplicantEducationalQualification> Qualifications { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         public DbSet<ManageUsers> ManageUsers { get; set; }
         public DbSet<ManageJobPost> ManageJobPosts { get; set; }

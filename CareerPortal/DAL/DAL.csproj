@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202305152149584_DBInit.designer.cs">
       <DependentUpon>202305152149584_DBInit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305152333391_NotificationAdded.cs" />
+    <Compile Include="Migrations\202305152333391_NotificationAdded.designer.cs">
+      <DependentUpon>202305152333391_NotificationAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicantEducationalQualification.cs" />
     <Compile Include="Models\ApplicantJobApply.cs" />
@@ -70,6 +74,7 @@
     <Compile Include="Models\EmployerRecruitment.cs" />
     <Compile Include="Models\ManageJobPost.cs" />
     <Compile Include="Models\ManageUsers.cs" />
+    <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +87,7 @@
     <Compile Include="Repos\ManageCategoryRepo.cs" />
     <Compile Include="Repos\ManageJobPostRepo.cs" />
     <Compile Include="Repos\ManageUserRepo.cs" />
+    <Compile Include="Repos\NotificationRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -93,6 +99,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305152149584_DBInit.resx">
       <DependentUpon>202305152149584_DBInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305152333391_NotificationAdded.resx">
+      <DependentUpon>202305152333391_NotificationAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
