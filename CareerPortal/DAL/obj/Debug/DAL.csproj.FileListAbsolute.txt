@@ -12,6 +12,7 @@ D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPort
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.DBInit.resources
 D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+<<<<<<< HEAD
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll.config
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.dll
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\bin\Debug\DAL.pdb
@@ -26,3 +27,6 @@ C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.pdb
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.AddToDatabase.resources
 C:\Users\rayed\OneDrive\Desktop\Git\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+=======
+D:\Semester-10\ADVANCED PROGRAMMING WITH DOTNET\1PROJECT\CareerPortal\CareerPortal\DAL\obj\Debug\DAL.Migrations.NotificationAdded.resources
+>>>>>>> 0f545d04472eda96f281bddbf66467acc7c0e173

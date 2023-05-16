@@ -63,5 +63,9 @@ namespace DAL
         {
             return new ApplicantJobApplyRepo();
         }
+        public static IRepo<Notification, int, bool> NotificationData()
+        {
+            return new NotificationRepo();
+        }
     }
 }

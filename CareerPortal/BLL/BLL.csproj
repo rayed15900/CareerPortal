@@ -51,6 +51,7 @@
     <Compile Include="DTOs\ManageCategoryDTO.cs" />
     <Compile Include="DTOs\ManageJobPostDTO.cs" />
     <Compile Include="DTOs\ManageUsersDTO.cs" />
+    <Compile Include="DTOs\NotificationDTO.cs" />
     <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Services\ManageCategoryService.cs" />
     <Compile Include="Services\ManageJobPostService.cs" />
     <Compile Include="Services\ManageUsersService.cs" />
+    <Compile Include="Services\NotificationServices.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -37,9 +37,11 @@ namespace DAL.Models
         public virtual User User { get; set; }
 
         public virtual ICollection<ApplicantEducationalQualification> Qualifications { get; set; }
+        public virtual ICollection<Notification> Notifications { get; set; }
         public ApplicantProfile()
         {
             Qualifications=new List<ApplicantEducationalQualification>();
+            Notifications=new List<Notification>();
         }
     }
 }
