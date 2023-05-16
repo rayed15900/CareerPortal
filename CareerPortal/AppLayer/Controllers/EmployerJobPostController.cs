@@ -14,7 +14,6 @@ namespace AppLayer.Controllers
     [EnableCors("*", "*", "*")]
     public class EmployerJobPostController : ApiController
     {
-        [Employer]
         [HttpGet]
         [Route("api/EmployerJobPosts")]
         public HttpResponseMessage Read()
